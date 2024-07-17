@@ -1,0 +1,33 @@
+body {
+
+}
+
+.loader {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    animation: loader 1s forwards;
+}
+
+loader__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.loader__container__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    background-image: url(../../assets/images/logo/ohmyfood.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(100%);
+}
