@@ -36,15 +36,13 @@ h1 {
   text-align: center;
 }
 
-h1,
-h2 {
-  font-family: "roboto";
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  color: #000;
-}
-
+/*h1,h2 {
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000;
+}*/
 .container {
   display: grid;
 }
@@ -95,13 +93,20 @@ a {
   text-decoration: none;
 }
 
-.functioning {
+.titre-reserver {
+  font-size: 24px;
+  align-items: center;
+  line-height: 23, 13px;
+}
+
+/*functionement*/
+.fonctioning {
   grid-column: 2/3;
   /*padding: 48px 0px 68px 0px;*/
   background: #FFFFFF;
 }
 
-.functioning::before {
+.fonctioning::before {
   content: "";
   width: 323px;
   height: 78px;
@@ -116,7 +121,7 @@ a {
   background: #FFFFFF;
 }
 
-.functioning ol li {
+.fonctioning ol li {
   display: flex;
   flex-direction: column;
   /* position: relative;*/
@@ -139,12 +144,13 @@ li {
   list-style: none;
 }
 
-.functioning li {
+.fonctioning li {
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
-.functioning ol {
+.fonctioning ol {
   width: 323px;
   height: 73px;
 }
@@ -153,4 +159,80 @@ li {
   margin-left: 20px;
   margin-bottom: 30px;
   margin-top: 40px;
+}
+
+/* restaurant*/
+.restaurant {
+  grid-column: 2/3;
+  display: flex;
+  flex-flow: column;
+  gap: 26px;
+  margin-top: 250px;
+  padding-bottom: 66px;
+  background-color: #F6F6F6;
+}
+
+/*.cards .card:nth-of-type(2)::before {
+    content: "Nouveau";
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 13px;
+    margin-right: 12px;
+    padding: 7px 9.63px 6px 9px;
+    background: #99E2D0;
+    color: #008766;
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #008766;
+}*/
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/*.restaurant::before {
+       content: "";
+       position: absolute;
+       z-index: -1;
+       grid-column: 1 / 4;
+       grid-row: 3 / 4;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+
+   }*/
+.cards {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 18px;
+  width: 100%;
+  height: 174px;
+}
+
+.cards .card {
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #FFFFFF;
+}
+
+.cards .card__content {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 25px 16px 13px;
+}
+
+.titre-restaurants {
+  margin-left: 25px;
 }/*# sourceMappingURL=style.css.map */
