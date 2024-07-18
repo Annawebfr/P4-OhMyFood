@@ -1,6 +1,8 @@
 body {}
 
-
+* {
+    font-family: "roboto", "shrikhand";
+}
 
 nav {
     position: relative;
@@ -97,11 +99,14 @@ a {
     text-decoration: none;
 }
 .titre-reserver {
-    font-size: 24px;
+    font-size: 25px;
     align-items: center;
     line-height: 23,13px;
 }
-
+.sub-titre-decouvrez {
+    font-size: 18px;
+    align-items: center;
+}
 
 /*functionement*/
 
@@ -245,4 +250,50 @@ a {
 
 .titre-restaurants{
     margin-left:25px;
+}
+
+/**footer**/
+
+footer {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    padding: 25px 22px 22px 25px;
+    background: #353535;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__logo {
+    width: 139px;
+    height: 27px;
+    padding: 20px 0;
+    filter: invert(1);
+    color:#FFFFFF;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+    gap: 10px;
+}
+.footer__links--bold {
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+.footer__links--simple {
+    font-size: 16px;
+    font-weight: 300;
+}
+.footer__links--bold .fa-solid {
+    width: 16px;
+}
+.footer__links--bold .fa-solid {
+    width: 16px;
 }
