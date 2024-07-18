@@ -11,3 +11,55 @@ nav {
     justify-content: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
 }
+nav img {
+    width: 162px;
+    max-height: 100%;
+    padding: 20px 0px 12px 0px;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #353535;
+    background: #EAEAEA;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #000;
+}
+
+.container{
+
+}
+.reservation {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+}
