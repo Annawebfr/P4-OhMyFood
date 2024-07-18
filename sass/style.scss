@@ -1,4 +1,4 @@
-body {}
+
 
 * {
     font-family: "roboto", "shrikhand";
@@ -74,6 +74,7 @@ h1 {
     padding: 39px 0px 57px 0px;
     background-color: #F6F6F6;
 }
+
 .reservation .btn {
     margin-top: 27px;
 }
@@ -98,11 +99,12 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .titre-reserver {
     font-size: 25px;
     align-items: center;
-    line-height: 23,13px;
 }
+
 .sub-titre-decouvrez {
     font-size: 18px;
     align-items: center;
@@ -178,7 +180,7 @@ li {
     display: flex;
     flex-flow: column;
     gap: 26px;
-margin-top:250px;
+    margin-top: 250px;
     padding-bottom: 66px;
     background-color: #F6F6F6;
 }
@@ -207,7 +209,7 @@ a {
 }
 
 
- /*.restaurant::before {
+/*.restaurant::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -220,7 +222,7 @@ a {
      
     }*/
 
-   .cards {
+.cards {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
@@ -230,6 +232,7 @@ a {
     width: 100%;
     height: 174px;
 }
+
 .cards .card {
     position: relative;
     box-sizing: border-box;
@@ -237,7 +240,7 @@ a {
     background: #FFFFFF;
 }
 
-    
+
 .cards .card__content {
     position: relative;
     display: flex;
@@ -248,8 +251,8 @@ a {
     padding: 16px 25px 16px 13px;
 }
 
-.titre-restaurants{
-    margin-left:25px;
+.titre-restaurants {
+    margin-left: 25px;
 }
 
 /**footer**/
@@ -261,6 +264,7 @@ footer {
     padding: 25px 22px 22px 25px;
     background: #353535;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -271,8 +275,9 @@ footer {
     height: 27px;
     padding: 20px 0;
     filter: invert(1);
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .footer__links {
     display: flex;
     flex-direction: column;
@@ -280,20 +285,25 @@ footer {
     color: rgb(255, 255, 255);
     gap: 10px;
 }
-.footer__links--bold {
+
+.footer__links_bold {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     justify-content: flex-start;
     gap: 12px;
+
 }
-.footer__links--simple {
+
+.footer__links_simple {
     font-size: 16px;
-    font-weight: 300;
+
 }
-.footer__links--bold .fa-solid {
+
+.footer__links_bold .fa-solid {
     width: 16px;
 }
-.footer__links--bold .fa-solid {
+
+.footer__links_bold .fa-solid {
     width: 16px;
 }
