@@ -246,11 +246,15 @@ li {
 }
 
 
-/*.card-titles {
+.card-titles {
   display: flex;
   text-align: left;
   margin: 20px 20px;
-}*/
+  color: #000000;
+}
+.p subtitle-resto  {
+  color:#000000;
+}
 
 
 
