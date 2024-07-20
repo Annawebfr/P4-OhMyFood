@@ -171,17 +171,28 @@ li {
   list-style: none;
 }
 
-.fonctionnement li {
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+/*.fonctionnement li {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .fonctionnement ol {
-  width: 323px;
-  height: 73px;
+    display: flex;
+    flex-direction: column;
+    width: 323px;
+    height: 73px;
 }
-
+/*.fonctionnement ol {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 25px;
+    margin: 0;
+    padding: 26px 0px 0px 12px;
+    list-style: none;
+    counter-reset: li;
+}*/
 .titre_function {
   margin-left: 20px;
   margin-bottom: 30px;

@@ -173,7 +173,7 @@ li {
     list-style: none;
 }
 
-.fonctionnement li {
+/*.fonctionnement li {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -181,7 +181,7 @@ li {
 
 .fonctionnement ol {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 323px;
     height: 73px;
 }
