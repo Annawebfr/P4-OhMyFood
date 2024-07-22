@@ -133,7 +133,7 @@ a {
   margin-top: 40px;
 }
 
-.fonction .fonction__bt {
+.fonction__btn {
   display: flex;
   flex-wrap: wrap;
 }
@@ -160,6 +160,11 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: -10px;
+}
+
+.fonction .fonction__icon {
+  margin-left: 20px;
+  color: #7e7e7e;
 }
 
 /** restaurant **/
