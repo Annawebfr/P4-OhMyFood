@@ -135,7 +135,11 @@ a {
 
 
 /*fonctionement*/
-
+.fonction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .titre_fonction {
     margin-left: 20px;
     margin-bottom: 30px;
