@@ -1,14 +1,29 @@
-* {
+/* Generale*/
+          
+           * {
     font-family: "roboto", "shrikhand";
-}
+
 
 *.roboto-regular {
     font-family: "Roboto", sans-serif;
+
+
+* {
+    margin: 0;
+    padding: 0;
+
 }
+}
+}
+
+
 
 .fa-solid {
     color: #FFFFFF;
 }
+
+
+
 
 nav {
     position: relative;
@@ -16,13 +31,15 @@ nav {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+
+    img {
+        width: 162px;
+        max-height: 100%;
+        padding: 20px 0px 12px 0px;
+    }
 }
 
-nav img {
-    width: 162px;
-    max-height: 100%;
-    padding: 20px 0px 12px 0px;
-}
+
 
 header p {
     display: flex;
@@ -39,10 +56,7 @@ header p {
     background: #EAEAEA;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 h1 {
     text-align: center;
@@ -150,7 +164,7 @@ a {
     background: #FFFFFF;
 }
 
-.fonctionnement ol li {
+.fonctionnement ul li {
     display: flex;
     flex-direction: column;
     /* position: relative;*/
@@ -350,6 +364,7 @@ footer {
     width: 16px;
     color: #FFFFFF
 }
+
 a {
     color: #FFFFFF;
     text-decoration: none;

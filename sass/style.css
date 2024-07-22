@@ -1,9 +1,13 @@
+/* Generale*/
 * {
   font-family: "roboto", "shrikhand";
 }
-
-*.roboto-regular {
+* *.roboto-regular {
   font-family: "Roboto", sans-serif;
+}
+* *.roboto-regular * {
+  margin: 0;
+  padding: 0;
 }
 
 .fa-solid {
@@ -17,7 +21,6 @@ nav {
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
 }
-
 nav img {
   width: 162px;
   max-height: 100%;
@@ -37,11 +40,6 @@ header p {
   line-height: 19px;
   color: #353535;
   background: #EAEAEA;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -148,7 +146,7 @@ a {
   background: #FFFFFF;
 }
 
-.fonctionnement ol li {
+.fonctionnement ul li {
   display: flex;
   flex-direction: column;
   /* position: relative;*/
