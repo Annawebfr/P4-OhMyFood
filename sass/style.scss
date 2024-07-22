@@ -4,9 +4,9 @@
     font-family: "roboto", "shrikhand";
 }
 
-*.roboto-regular {
+/**.roboto-regular {
     font-family: "Roboto", sans-serif;
-}
+}**/
 
     * {
         margin: 0;
@@ -63,10 +63,7 @@ h1 {
 }
 
 
-/**Main container**/
-.container {
-    display: grid;
-}
+
 
 /*.reservation ::before {
     content: "";
@@ -148,8 +145,11 @@ a {
 .fonction__btn {
     display: flex;
     flex-wrap: wrap;
+    font-family: roboto;
+    font-size: 16px;
 }
-.fonction .fonction-content {
+
+.fonction .fonction_content {
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -159,6 +159,7 @@ a {
     margin: 10px;
     width: 90%;
     cursor: pointer;
+    
 }
 
 .fonction .fonction_number {
@@ -180,11 +181,15 @@ a {
 
 
 
-
-
 /** restaurant **/
 .titre_restaurants {
     margin-left: 25px;
+}
+.card_titles {
+    color: #000;
+}
+.subtitle_resto {
+    color: #000;
 }
 
 .restaurant {
@@ -199,7 +204,7 @@ a {
 
 .restaurant_cards img {
     width: 100%;
-    height: 174px;
+    height: 231px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
