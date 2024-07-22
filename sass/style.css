@@ -14,14 +14,14 @@
   color: #FFFFFF;
 }
 
-nav {
+.logo {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
 }
-nav img {
+.logo img {
   width: 162px;
   max-height: 100%;
   padding: 20px 0px 12px 0px;
