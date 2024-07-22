@@ -34,7 +34,7 @@
   padding: 20px 0px 12px 0px;
 }
 
-p header {
+.paris_belleville {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,25 +127,18 @@ a {
 }
 
 /*fonctionement*/
-.fonctionnement {
-  grid-column: 2/3;
-  /*padding: 48px 0px 68px 0px;*/
-  background: #FFFFFF;
-  content: "";
-  width: 323px;
-  height: 78px;
-  position: absolute;
-  z-index: -1;
-  grid-column: 1/4;
-  grid-row: 2/3;
-  left: 0;
-  top: 0;
-  /*  width: 100%;
-      height: 100%;*/
-  background: #FFFFFF;
+.titre_fonction {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
-.fonctionnement .fonction-content {
+.fonction .fonction__bt {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fonction .fonction-content {
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -157,7 +150,7 @@ a {
   cursor: pointer;
 }
 
-.fonctionnement .fonction_number {
+.fonction .fonction_number {
   background-color: #9747ff;
   color: #ffffff;
   width: 25px;
@@ -167,58 +160,6 @@ a {
   justify-content: center;
   align-items: center;
   margin-left: -10px;
-}
-
-.fonctionnement ul li {
-  display: flex;
-  flex-direction: column;
-  /* position: relative;*/
-  align-items: center;
-  gap: 20px;
-  flex-basis: 100%;
-  /*  margin: 0;*/
-  padding: 29px 38px 28px 37.5px;
-  background: #F6F6F6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  border-radius: 20px;
-  font-family: "roboto";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #000;
-}
-
-li {
-  list-style: none;
-}
-
-.fonctionnement li {
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.fonctionnement ul {
-  display: flex;
-  flex-direction: column;
-  width: 323px;
-  height: 73px;
-}
-
-/*.fonctionnement ul {
-    display: flex;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 25px;
-    margin: 0;
-    padding: 26px 0px 0px 12px;
-    list-style: none;
-    counter-reset: li;
-}*/
-.titre_fonction {
-  margin-left: 20px;
-  margin-bottom: 30px;
-  margin-top: 40px;
 }
 
 /** restaurant **/
@@ -288,18 +229,18 @@ a {
     gap: 5px;
     padding: 16px 25px 16px 13px;
 
-}
-    .restaurant::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        grid-column: 1 / 4;
-        grid-row: 3 / 4;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;  
-    }**/
+}*/
+/* .restaurant::before {
+     content: "";
+     position: absolute;
+     z-index: -1;
+     grid-column: 1 / 4;
+     grid-row: 3 / 4;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;  
+ }**/
 /**footer**/
 footer {
   display: flex;
