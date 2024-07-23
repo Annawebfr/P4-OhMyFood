@@ -121,10 +121,20 @@ a {
 }
 
 /*fonctionement*/
+.fonction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .titre_fonction {
   margin-left: 20px;
   margin-bottom: 30px;
   margin-top: 40px;
+}
+
+p texte {
+  margin: 10px;
 }
 
 .fonction__btn {
@@ -159,13 +169,15 @@ a {
 }
 
 .fonction .fonction__icon {
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   color: #7e7e7e;
+  margin: 20px;
 }
 
 /** restaurant **/
 .titre_restaurants {
-  margin-left: 25px;
+  margin-left: 15px;
+  margin-top: 50px;
 }
 
 .card_titles {
@@ -187,7 +199,7 @@ a {
 }
 
 .restaurant_cards img {
-  width: 100%;
+  width: 75%;
   height: 231px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -211,7 +223,7 @@ a {
   height: 174px;
 }
 
-.cards .card {
+.cards .restaurant_card {
   position: relative;
   box-sizing: border-box;
   border-radius: 15px;
