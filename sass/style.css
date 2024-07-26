@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Generale*/
 * {
   font-family: "roboto", "shrikhand";
@@ -308,4 +309,10 @@ footer {
 a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+/**menu la palette du goût**/
+.logo-palette {
+  width: 375px;
+  height: 63px;
 }/*# sourceMappingURL=style.css.map */
