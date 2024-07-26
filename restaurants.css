@@ -8,6 +8,6 @@
 .head_img {
   height: 360px;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /** -o-object-fit: cover;
+   object-fit: cover;**/
 }/*# sourceMappingURL=restaurants.css.map */
