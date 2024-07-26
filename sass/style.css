@@ -200,7 +200,7 @@ p texte {
 }
 
 .restaurant_cards img {
-  width: 75%;
+  width: 100%;
   height: 231px;
   -o-object-fit: cover;
      object-fit: cover;
