@@ -53,18 +53,6 @@ h1 {
   text-align: center;
 }
 
-/*.reservation ::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #F6F6F6;
-}*/
 .reservation {
   grid-column: 2/3;
   display: flex;
@@ -253,27 +241,6 @@ a {
   color: #000000;
 }
 
-/**.card-content {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 5px;
-    padding: 16px 25px 16px 13px;
-
-}*/
-/* .restaurant::before {
-     content: "";
-     position: absolute;
-     z-index: -1;
-     grid-column: 1 / 4;
-     grid-row: 3 / 4;
-     left: 0;
-     top: 0;
-     width: 100%;
-     height: 100%;  
- }**/
 /**footer**/
 footer {
   display: flex;
