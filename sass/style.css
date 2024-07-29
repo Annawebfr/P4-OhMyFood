@@ -124,8 +124,7 @@ a {
 .fonction {
   display: flex;
   flex-direction: column;
-  /**  align-items: center;
-    justify-content: center;**/
+  margin: 20px 0 50px 20px;
 }
 
 .titre_fonction {
@@ -183,12 +182,12 @@ p texte {
 
 .card_titles {
   color: #000;
-  margin: 15px;
+  margin: 10px;
 }
 
 .subtitle_resto {
   color: #000;
-  margin: 15px;
+  margin: 10px;
 }
 
 .restaurant {
