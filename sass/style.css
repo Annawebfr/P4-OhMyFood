@@ -33,7 +33,7 @@
   padding: 20px 0px 12px 0px;
 }
 
-.paris_belleville {
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,12 +41,18 @@
   padding: 15px 0px 15px 0px;
   width: 100%;
   font-family: "roboto";
-  font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   color: #353535;
   background: #EAEAEA;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+}
+.location_search {
+  color: #353535;
+  background: #EAEAEA;
+  font-size: 16px;
+  border: none;
+  width: 110px;
 }
 
 h1 {
@@ -114,37 +120,13 @@ a {
   flex-direction: column;
   margin: 20px 0 50px 20px;
 }
-
-.titre_fonction {
-  margin-left: 20px;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
-
-p texte {
-  margin: 10px;
-}
-
-.fonction__btn {
+.fonction_btn {
   display: flex;
   flex-wrap: wrap;
   font-family: roboto;
   font-size: 16px;
 }
-
-.fonction .fonction_content {
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
-  height: 70px;
-  margin: 10px;
-  width: 90%;
-  cursor: pointer;
-}
-
-.fonction .fonction_number {
+.fonction_number {
   background-color: #9747ff;
   color: #ffffff;
   width: 25px;
@@ -155,11 +137,28 @@ p texte {
   align-items: center;
   margin-left: -10px;
 }
-
-.fonction .fonction__icon {
-  /*margin-left: 20px;*/
+.fonction_content {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 70px;
+  margin: 10px;
+  width: 90%;
+  cursor: pointer;
+}
+.fonction_icon {
   color: #7e7e7e;
   margin: 20px;
+}
+.fonction_titre {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.fonction_texte {
+  margin: 10px;
 }
 
 /** restaurant **/
