@@ -3,10 +3,11 @@
     display: flex;
     justify-content: center;
     padding: 10px;
-}
-header .logo {
+
+&_logo {
     margin: 20px 0 10px 0;
     width: 200px;
+}
 }
 
 /**section menu**/
