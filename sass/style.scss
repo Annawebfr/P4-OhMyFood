@@ -396,3 +396,16 @@ a {
     color: #FFFFFF;
     text-decoration: none;
 }
+
+
+/***css de la Page Menu de la palette***/
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header .logo {
+    margin: 20px 0 10px 0;
+    width: 200px;
+} 
