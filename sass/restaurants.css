@@ -1,1 +1,57 @@
-/*# sourceMappingURL=restaurants.css.map */
+/***CSS Page menu de la palette***/
+.header_palette {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+header .logo_palette {
+  margin: 20px 0 10px 0;
+  width: 200px;
+}
+
+.head_imgpalette {
+  height: 360px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.menu_palette {
+  position: relative;
+  margin-top: -90px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+
+.menu_palette h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+}
+
+.menu .palette_heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .palette_icon {
+  margin-right: 26px;
+}
+
+menu_palette .empty {
+  top: 57px;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.menu_palette .full {
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 57px;
+}/*# sourceMappingURL=restaurants.css.map */
