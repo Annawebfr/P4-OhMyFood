@@ -51,7 +51,6 @@
     filter: invert(100%);
 }**/
 
-
 /** header logo**/
 .logo {
     position: relative;
@@ -397,15 +396,13 @@ a {
     text-decoration: none;
 }
 
-
-/***css Page Menu de la palette***/
-header {
+/***CSS Page menu de la palette***/
+.header_palette {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-
 header .logo_palette {
     margin: 20px 0 10px 0;
     width: 200px;
-} 
+}
