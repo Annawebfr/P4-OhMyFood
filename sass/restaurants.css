@@ -1,23 +1,24 @@
 /***CSS Page menu de la palette***/
-.header_palette {
+.header {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-header .logo_palette {
+header .logo {
   margin: 20px 0 10px 0;
   width: 200px;
 }
 
-.head_imgpalette {
+/**section menu**/
+.head_img {
   height: 360px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.menu_palette {
+.menu {
   position: relative;
   margin-top: -90px;
   background-color: #f6f6f6;
@@ -26,29 +27,29 @@ header .logo_palette {
   border-top-left-radius: 40px;
 }
 
-.menu_palette h1 {
+.menu_titre h1 {
   font-family: Shrikhand;
   font-size: 30px;
 }
 
-.menu_palette .palette_heart {
+.menu .icons_heart {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu_palette .palette_icon {
+.menu .icons_heart {
   margin-right: 26px;
 }
 
-menu_palette .empty {
+menu .empty {
   top: 57px;
   font-size: 25px;
   cursor: pointer;
   position: absolute;
 }
 
-.menu_palette .full {
+.menu .full {
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
