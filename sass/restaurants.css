@@ -4,7 +4,8 @@
   justify-content: center;
   padding: 10px;
 }
-.header_logo {
+
+logo {
   margin: 20px 0 10px 0;
   width: 200px;
 }
@@ -54,4 +55,51 @@ menu .empty {
   opacity: 0;
   position: absolute;
   top: 57px;
+}
+
+/**footer**/
+footer {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  padding: 25px 22px 22px 25px;
+  background: #353535;
+}
+
+.footer_logo {
+  width: 139px;
+  height: 27px;
+  padding: 20px 0;
+  filter: invert(1);
+  color: #FFFFFF;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(255, 255, 255);
+  gap: 10px;
+}
+
+.footer_links_bold {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.footer_links_simple {
+  font-size: 16px;
+}
+
+.footer_links_bold .fa-solid {
+  width: 16px;
+  color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
 }/*# sourceMappingURL=restaurants.css.map */
