@@ -31,13 +31,13 @@ header .logo_palette {
   font-size: 30px;
 }
 
-.menu .palette_heart {
+.menu_palette .palette_heart {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu .palette_icon {
+.menu_palette .palette_icon {
   margin-right: 26px;
 }
 
