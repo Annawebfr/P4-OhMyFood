@@ -18,8 +18,7 @@
     line-height: 28px;
     color: #000;
 }*/
-/**loader
-.loader {
+/**.loader {
     z-index: 100;
     position: fixed;
     width: 100vw;
@@ -46,6 +45,45 @@
     background-size: contain;
     filter: invert(100%);
 }**/
+.loading {
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  animation-name: animation_opacity;
+  animation-duration: 2s;
+  /**animation-timing-function: linear;**/
+  animation-fill-mode: forwards;
+}
+.loading_container {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #9356DC;
+  border-radius: 50%;
+  border-bottom-color: #FF79DA;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  animation: animation_loader 2s linear;
+}
+
+@keyframes animation_loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animation_opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /** header logo**/
 .logo {
   position: relative;
