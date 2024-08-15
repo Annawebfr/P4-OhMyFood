@@ -82,7 +82,6 @@ animation-fill-mode: forwards;
        
         transform: rotate(0deg);
     }
-
     100% {
        
         transform: rotate(360deg);
@@ -95,7 +94,6 @@ animation-fill-mode: forwards;
         opacity: 1;
        
     }
-
     100% {
         opacity: 0;
         
@@ -175,19 +173,6 @@ h1 {
 }
 
 .btn {
-    /** display: block;
-    padding: 16px 25px;
-    border-radius: 25px;
-    font-family: "roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    color: #FFFFFF;
-    text-align: center;
-    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    color: #FFFFFF;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    transition: background 300ms, box-shadow 300ms;**/
     display: block;
     padding: 16px 25px;
     border-radius: 25px;
@@ -343,15 +328,12 @@ a {
     text-decoration: none;
 }
 
-
-
 .cards .restaurant_card {
     position: relative;
     box-sizing: border-box;
     border-radius: 15px;
     background: #FFFFFF;
 }
-
 
 
 restaurant .card_titles .empty {
