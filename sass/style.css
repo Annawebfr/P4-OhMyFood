@@ -322,6 +322,10 @@ restaurant .card_titles .empty {
   right: 5%;
 }
 
+.heart {
+  position: absolute;
+}
+
 /**footer**/
 footer {
   display: flex;
