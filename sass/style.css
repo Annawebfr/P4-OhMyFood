@@ -22,7 +22,7 @@
   background-color: #FFFFFF;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 3;
   position: fixed;
   animation-name: animation_opacity;
   animation-duration: 2s;
@@ -55,8 +55,14 @@
   }
   100% {
     opacity: 0;
+    z-index: 1;
   }
 }
+.main_container {
+  z-index: 2;
+  position: relative;
+}
+
 /** header logo**/
 .logo {
   position: relative;
@@ -245,15 +251,15 @@ a {
   border-top-right-radius: 15px;
 }
 
-.card__content {
+.card_content {
   position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 5px;
-  padding: 16px 25px 16px 13px;
-  color: #000000;
+  /** display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+   gap: 5px;
+   padding: 16px 25px 16px 13px;
+   color: #000000;**/
 }
 
 .card_titles {
@@ -323,6 +329,19 @@ restaurant .card_titles .empty {
 }
 
 .heart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: black;
+}
+.heart:hover {
+  /** z-index:1
+   keyframe:**/
+  /**   .full: keyframe qui va changer la z-index
+     .empty**/
+}
+
+.fa-heart {
   position: absolute;
 }
 
