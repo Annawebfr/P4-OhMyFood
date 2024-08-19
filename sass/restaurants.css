@@ -35,6 +35,12 @@
   font-size: 30px;
 }
 
+.menu .card-menu h3 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
 .menu .content-title {
   border-bottom: solid;
   border-bottom: solid;
@@ -72,7 +78,9 @@ menu .empty {
   top: 57px;
 }
 
-.menu .card-menu .card {
+.card {
+  width: 335px;
+  height: 70px;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -82,7 +90,7 @@ menu .empty {
   display: flex;
 }
 
-.menu .card-menu .card .name {
+.card .name {
   padding: 13px;
   cursor: pointer;
   display: flex;
@@ -91,13 +99,13 @@ menu .empty {
   min-width: 0;
 }
 
-.menu .card-menu .card .prix {
+.card .prix {
   margin-right: 27px;
   font-weight: bold;
   margin-top: 39px;
 }
 
-.menu .card-menu .card .check {
+.card .check {
   display: flex;
   background-color: #99e2d0;
   color: white;
@@ -109,6 +117,27 @@ menu .empty {
   width: 80px;
   margin-right: -100px;
   transition: 400ms ease-out;
+}
+
+.menu .entrees {
+  animation: fadein;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.menu .plats {
+  animation: fadein;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.card .name {
+  padding: 13px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 /**bouton commander**/

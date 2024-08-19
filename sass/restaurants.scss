@@ -33,6 +33,19 @@
     font-family: Shrikhand;
     font-size: 30px;
 }
+.menu .card h3 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 4px;
+}
+
+.menu .card h4 {
+    margin-bottom: 7px;
+    margin-top: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 .menu .content-title {
     border-bottom: solid;
     border-bottom: solid;
@@ -68,7 +81,9 @@ menu .empty {
     top: 57px;
 }
 
-.menu .card-menu .card {
+.card {
+    width: 335px;
+    height: 70px;;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -77,7 +92,7 @@ menu .empty {
     overflow: hidden;
     display: flex;
 }
-.menu .card-menu .card .name {
+.card name {
     padding: 13px;
     cursor: pointer;
     display: flex;
@@ -85,12 +100,14 @@ menu .empty {
     flex: 1;
     min-width: 0;
 }
-.menu .card-menu .card .prix {
+
+
+.card .prix {
     margin-right: 27px;
     font-weight: bold;
     margin-top: 39px;
 }
-.menu .card-menu .card .check {
+.card .check {
     display: flex;
     background-color: #99e2d0;
     color: white;
@@ -103,8 +120,44 @@ menu .empty {
     margin-right: -100px;
     transition: 400ms ease-out;
 }
+
+.menu .entrees {
+    animation: fadein;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+.menu .plats {
+    animation: fadein;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+.menu .desserts {
+    animation: fadein;
+    animation-duration: 6s;
+    animation-timing-function: ease-in;
+}
+.card .name {
+    padding: 13px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+.card .p {
+    font-size: 15px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
 /**bouton commander**/
 .btn {
+    width: 220px;
     display: block;
     padding: 16px 25px;
     border-radius: 25px;
@@ -127,14 +180,14 @@ footer {
     display: flex;
     flex-flow: column;
     gap: 16px;
-    padding: 25px 22px 22px 25px;
+  padding: 25px 22px 22px 25px;
     background: #353535;
 }
 
 .footer_logo {
     width: 139px;
     height: 27px;
-    padding: 20px 0;
+   /** padding: 20px 0;**/
     filter: invert(1);
     color: #FFFFFF;
 }
