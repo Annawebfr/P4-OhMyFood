@@ -4,13 +4,21 @@
     justify-content: center;
     padding: 10px;
 }
-.img logo {
-    /**margin: 20px 0 10px 0;
-    width: 200px;**/
+.logo {
+    margin: 20px 0 10px 0;
+    width: 200px;
     display: block;
     height: 30px;
     width: 162px;
 }
+
+header .fa-arrow-left {
+    position: absolute;
+    left: 6px;
+    font-size: 24px;
+    top: 34px;
+}
+
 
 
 /**section menu**/
