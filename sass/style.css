@@ -254,12 +254,12 @@ a {
 .card_content {
   position: relative;
   /** display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
-   flex-direction: column;
-   gap: 5px;
-   padding: 16px 25px 16px 13px;
-   color: #000000;**/
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 25px 16px 13px;
+  color: #000000;**/
 }
 
 .card_titles {
@@ -333,12 +333,19 @@ restaurant .card_titles .empty {
   right: 0;
   top: 0;
   color: black;
-}
-.heart:hover {
-  /** z-index:1
-   keyframe:**/
+  /**&:hover {
+      z-index:1
+      keyframe:**/
   /**   .full: keyframe qui va changer la z-index
-     .empty**/
+      .empty**/
+  /** .full:hover {
+          color: transparent;
+          background-image: linear-gradient(10deg, #ff79da, #9356DC);
+          -webkit-background-clip: text;
+          background-clip: text;
+          transition: all 400ms;
+          opacity: 1;
+      }**/
 }
 
 .fa-heart {
@@ -390,4 +397,6 @@ footer {
 a {
   color: #FFFFFF;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/**@media (min-width: 767px) and (max-width: 1025px)**//*# sourceMappingURL=style.css.map */
