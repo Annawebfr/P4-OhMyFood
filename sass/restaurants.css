@@ -2,25 +2,34 @@
 .header {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  /**padding: 10px;**/
 }
 
-.img logo {
-  /**margin: 20px 0 10px 0;
-  width: 200px;**/
+.logo {
+  margin: 20px 0 10px 0;
+  width: 200px;
   display: block;
   height: 30px;
   width: 162px;
 }
 
-/**section menu**/
+header .fa-arrow-left {
+  position: absolute;
+  left: 6px;
+  font-size: 24px;
+  top: 34px;
+  color: black;
+}
+
 .head_img {
   height: 360px;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  margin-top: 20px;
 }
 
+/**section menu**/
 .menu {
   position: relative;
   margin-top: -90px;
@@ -33,19 +42,6 @@
 .menu_titre h1 {
   font-family: Shrikhand;
   font-size: 30px;
-}
-
-.menu .card-menu h3 {
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 4px;
-}
-
-.menu .content-title {
-  border-bottom: solid;
-  border-bottom: solid;
-  width: 41px;
-  border-color: #99E2D0;
 }
 
 .menu .icons_heart {
@@ -78,6 +74,37 @@ menu .empty {
   top: 57px;
 }
 
+.menu .menuentrees {
+  animation: fadein;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.menu .plats {
+  animation: fadein;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+}
+
+.menu .desserts {
+  animation: fadein;
+  animation-duration: 6s;
+  animation-timing-function: ease-in;
+}
+
+.menu .content-title {
+  border-bottom: solid;
+  border-bottom: solid;
+  width: 41px;
+  border-color: #99E2D0;
+}
+
+.menu .card h3 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
 .card {
   width: 335px;
   height: 70px;
@@ -90,13 +117,29 @@ menu .empty {
   display: flex;
 }
 
-.card .name {
+.card name {
   padding: 13px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
+}
+
+.menu .card h4 {
+  margin-bottom: 7px;
+  margin-top: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card .p {
+  font-size: 15px;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card .prix {
@@ -119,29 +162,9 @@ menu .empty {
   transition: 400ms ease-out;
 }
 
-.menu .entrees {
-  animation: fadein;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-}
-
-.menu .plats {
-  animation: fadein;
-  animation-duration: 4s;
-  animation-timing-function: ease-in;
-}
-
-.card .name {
-  padding: 13px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 0;
-}
-
 /**bouton commander**/
 .btn {
+  width: 220px;
   display: block;
   padding: 16px 25px;
   border-radius: 25px;
@@ -162,14 +185,14 @@ footer {
   display: flex;
   flex-flow: column;
   gap: 16px;
-  padding: 25px 22px 22px 25px;
+  /** padding: 25px 22px 22px 25px;**/
   background: #353535;
 }
 
 .footer_logo {
   width: 139px;
   height: 27px;
-  padding: 20px 0;
+  padding: 3px;
   filter: invert(1);
   color: #FFFFFF;
 }
