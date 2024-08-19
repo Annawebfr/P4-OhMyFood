@@ -4,9 +4,12 @@
     justify-content: center;
     padding: 10px;
 }
-logo {
-    margin: 20px 0 10px 0;
-    width: 200px;
+.img logo {
+    /**margin: 20px 0 10px 0;
+    width: 200px;**/
+    display: block;
+    height: 30px;
+    width: 162px;
 }
 
 
@@ -30,14 +33,27 @@ logo {
     font-family: Shrikhand;
     font-size: 30px;
 }
+.menu .content-title {
+    border-bottom: solid;
+    border-bottom: solid;
+    width: 41px;
+    border-color: #99E2D0;
+}
 .menu .icons_heart {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu .icons_heart {
-   margin-right: 26px;
+
+.icons_heart {
+    position: absolute;
+    color: black
 }
+
+.fa-heart {
+    position: absolute;
+}
+
 menu .empty {
     top: 57px;
     font-size: 25px;
@@ -52,7 +68,42 @@ menu .empty {
     top: 57px;
 }
 
-
+.menu .card-menu .card {
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+}
+.menu .card-menu .card .name {
+    padding: 13px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+.menu .card-menu .card .prix {
+    margin-right: 27px;
+    font-weight: bold;
+    margin-top: 39px;
+}
+.menu .card-menu .card .check {
+    display: flex;
+    background-color: #99e2d0;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    margin-right: -100px;
+    transition: 400ms ease-out;
+}
+/**bouton commander**/
 .btn {
     display: block;
     padding: 16px 25px;
