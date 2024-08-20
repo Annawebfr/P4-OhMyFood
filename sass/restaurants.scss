@@ -28,6 +28,9 @@
     object-fit: cover;
     margin-top: 20px;
 }
+
+
+
 /**section menu**/
 .menu {
     position: relative;
@@ -47,7 +50,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: absolute;
+            /**position: absolute;**/
             color: black;
 
             .fa-heart {
@@ -71,7 +74,7 @@
         }
     }
 
-    /** .card_container {}**/
+ /** .card_container {}**/
 
     .menuentrees {
         animation: fadein;
