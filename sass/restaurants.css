@@ -19,7 +19,8 @@
   top: 34px;
   color: black;
 }
-.header .head_img {
+
+.head_img {
   height: 360px;
   width: 100%;
   -o-object-fit: cover;
@@ -144,7 +145,7 @@
 
 /**bouton commander**/
 .btn {
-  width: 220px;
+  width: 186px;
   display: block;
   padding: 16px 25px;
   border-radius: 25px;
@@ -168,7 +169,7 @@ footer {
   /** padding: 25px 22px 22px 25px;**/
   background: #353535;
 }
-footer .logo {
+footer .footer_logo {
   width: 139px;
   height: 27px;
   padding: 3px;
@@ -176,24 +177,25 @@ footer .logo {
   filter: invert(1);
   color: #FFFFFF;
 }
-footer .links {
+footer .footer_links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   color: rgb(255, 255, 255);
   gap: 10px;
+  list-style: none;
 }
-footer .links_bold {
+footer .footer_links_bold {
   font-size: 16px;
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
   gap: 12px;
 }
-footer .links_simple {
+footer .footer_links_simple {
   font-size: 16px;
 }
-footer .links_bold .fa-solid {
+footer .footer_links_bold .fa-solid {
   width: 16px;
   color: #FFFFFF;
 }
