@@ -4,9 +4,9 @@
   justify-content: center;
   padding: 10px;
 }
-.header .img logo {
-  /**  margin: 20px 0 10px 0;**/
-  /** width: 200px;**/
+.header_logo {
+  margin: 20px 0 10px 0;
+  width: 200px;
   display: block;
   height: 30px;
   width: 162px;
