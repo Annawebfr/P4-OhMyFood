@@ -70,6 +70,14 @@
   opacity: 0;
   position: absolute;
 }
+.menu .titre_heart .icons_heart .full .full:hover {
+  color: transparent;
+  background-image: linear-gradient(10deg, #ff79da, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: all 400ms;
+  opacity: 1;
+}
 .menu .menuentrees {
   animation: fadein;
   animation-duration: 4s;
