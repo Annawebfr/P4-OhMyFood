@@ -38,9 +38,12 @@
   border-top-left-radius: 40px;
   /** .card_container {}**/
 }
-.menu titre h1 {
+.menu .titre_heart h1 {
   font-family: Shrikhand;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 28px;
+  font-style: italique;
+  line-height: 40.82px;
 }
 .menu .titre_heart .icons_heart {
   display: flex;
@@ -53,15 +56,15 @@
   position: absolute;
 }
 .menu .titre_heart .icons_heart .empty {
-  top: 40px;
-  left: 280px;
+  top: 50px;
+  left: 300px;
   font-size: 25px;
   cursor: pointer;
   position: absolute;
 }
 .menu .titre_heart .icons_heart .full {
-  top: 38px;
-  left: 280px;
+  top: 50px;
+  left: 300px;
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
