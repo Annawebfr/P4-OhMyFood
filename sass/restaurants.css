@@ -4,9 +4,9 @@
   justify-content: center;
   padding: 10px;
 }
-.header .logo {
-  margin: 20px 0 10px 0;
-  width: 200px;
+.header .img logo {
+  /**  margin: 20px 0 10px 0;**/
+  /** width: 200px;**/
   display: block;
   height: 30px;
   width: 162px;
@@ -53,17 +53,19 @@
   position: absolute;
 }
 .menu .titre_heart .icons_heart .empty {
-  top: 57px;
+  top: 40px;
+  left: 280px;
   font-size: 25px;
   cursor: pointer;
   position: absolute;
 }
 .menu .titre_heart .icons_heart .full {
+  top: 38px;
+  left: 280px;
   font-size: 25px;
   cursor: pointer;
   opacity: 0;
   position: absolute;
-  top: 57px;
 }
 .menu .menuentrees {
   animation: fadein;
@@ -82,7 +84,6 @@
 }
 .menu .content_title {
   border-bottom: solid;
-  border-bottom: solid;
   width: 41px;
   border-color: #99E2D0;
 }
@@ -92,8 +93,8 @@
   padding-bottom: 4px;
 }
 .menu .card {
-  /**width: 335px;**/
-  height: 70px;
+  width: 349px;
+  height: 72px;
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
@@ -107,6 +108,8 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  margin-top: 13px;
   flex: 1;
   min-width: 0;
 }
