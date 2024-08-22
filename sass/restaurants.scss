@@ -1,12 +1,27 @@
 /***CSS Page menu de la palette***/
+/**Generale**/
+
+* {
+    font-family: "roboto", "shrikhand";
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .header {
     display: flex;
     justify-content: center;
     padding: 10px;
 
     &_logo {
-      margin: 20px 0 10px 0;
-       width: 200px;
+        margin: 20px 0 10px 0;
+        width: 200px;
         display: block;
         height: 30px;
         width: 162px;
@@ -41,7 +56,7 @@
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
 
-    
+
 
     .titre_heart {
 
@@ -49,9 +64,10 @@
             font-family: Shrikhand;
             font-weight: 400;
             font-size: 28px;
-            font-style:italique;
+            font-style: italique;
             line-height: 40.82px;
         }
+
         .icons_heart {
             display: flex;
             align-items: center;
@@ -78,140 +94,144 @@
                 cursor: pointer;
                 opacity: 0;
                 position: absolute;
-                
+
                 .full:hover {
                     color: transparent;
                     background-image: linear-gradient(10deg, #ff79da, #9356DC);
-                   /** -webkit-background-clip: text;**/
+                    /** -webkit-background-clip: text;**/
                     background-clip: text;
                     transition: all 400ms;
                     opacity: 1;
                 }
+
                 @keyframes fadein {
                     from {
                         opacity: 0;
                     }
-            
+
                     to {
                         opacity: 1;
                     }
-               
+
+                }
             }
+        }
+
+        /** .card_container {}**/
+
+        .menuentrees {
+            animation: fadein;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+        }
+
+        .plats {
+            animation: fadein;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+        }
+
+        .desserts {
+            animation: fadein;
+            animation-duration: 6s;
+            animation-timing-function: ease-in;
+        }
+
+        .check {
+            display: flex;
+            background-color: #99e2d0;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 80px;
+            margin-right: -100px;
+            transition: 400ms ease-out;
+        }
+
+        .content_title {
+            border-bottom: solid;
+            width: 41px;
+            border-color: #99E2D0;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 300;
+            padding-bottom: 4px;
+        }
+
+        .card {
+            width: 100%;
+            height: 72px;
+            border-radius: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+            position: relative;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .name {
+            /**padding: 13px;**/
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            margin-top: 13px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .card h4 {
+            margin-bottom: 7px;
+            margin-top: 0px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .card p {
+            font-size: 15px;
+            margin: 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .prix {
+            margin-right: 40px;
+            font-weight: bold;
+            margin-top: 39px;
         }
     }
 
-    /** .card_container {}**/
 
-    .menuentrees {
-        animation: fadein;
-        animation-duration: 4s;
-        animation-timing-function: ease-in;
-    }
+    /**bouton commander**/
 
-    .plats {
-        animation: fadein;
-        animation-duration: 4s;
-        animation-timing-function: ease-in;
-    }
-
-    .desserts {
-        animation: fadein;
-        animation-duration: 6s;
-        animation-timing-function: ease-in;
-    }
-
-    .content_title {
-        border-bottom: solid;
-        width: 41px;
-        border-color: #99E2D0;
-    }
-
-    .h3 {
+    .btn {
+        border-radius: 25px;
+        color: #ffffff;
+        background: linear-gradient(#ff79da, #9356dc);
+        border: none;
+        height: 50px;
+        width: 220px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         font-size: 16px;
-        font-weight: 300;
-        padding-bottom: 4px;
-    }
-
-    .card {
-        width: 100%;
-        height: 72px;
-        border-radius: 20px;
-        background-color: #ffffff;
-        box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-        position: relative;
-        margin-bottom: 10px;
-        overflow: hidden;
-        display: flex;
-    }
-
-    .name {
-/**padding: 13px;**/
+        font-weight: 500;
+        margin-top: 15px;
+        font-family: "Roboto", sans-serif;
+        transition: 0.3s;
         cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-        margin-top: 13px; 
-        flex: 1;
-        min-width: 0;
+
+        &:hover {
+            background: linear-gradient(#ff90e7, #a16eff);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+        }
     }
-
-    .card h4 {
-        margin-bottom: 7px;
-        margin-top: 0px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    .card p {
-        font-size: 15px;
-        margin: 0px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .prix {
-      margin-right: 40px;
-        font-weight: bold;
-        margin-top: 39px;
-    }
-
-    .check {
-        display: flex;
-        background-color: #99e2d0;
-        color: white;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 80px;
-        margin-right: -100px;
-        transition: 400ms ease-out;
-    }
-}
-
-
-/**bouton commander**/
-.btn {
-    width: 186px;
-    display: block;
-    padding: 16px 25px;
-    border-radius: 25px;
-    font-family: "roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    color: #FFFFFF;
-    text-align: center;
-    background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    color: #FFFFFF;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    transition: background 300ms, box-shadow 300ms;
-}
-
-
 
 /**footer**/
 footer {
