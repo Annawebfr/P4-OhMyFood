@@ -168,10 +168,10 @@ h1 {
     transition: 0.3s;
     cursor: pointer;
 
-&:hover {
-    background: linear-gradient(#ff90e7, #a16eff);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
+    &:hover {
+        background: linear-gradient(#ff90e7, #a16eff);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    }
 }
 
 a {
@@ -445,9 +445,8 @@ a {
 
 
 
-
-
-
-
-
-/**@media (min-width: 767px) and (max-width: 1025px)**/
+@media (min-width: 767px) and (max-width: 1025px) 
+/**.fonction {
+    display: flex;
+    flex-direction: row;
+}**/
