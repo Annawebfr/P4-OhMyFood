@@ -1,18 +1,38 @@
-/***CSS Page menu de la palette***/
-.header {
+/**Generale**/
+* {
+  font-family: "roboto", "shrikhand";
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**header**/
+header {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-.header_logo {
-  margin: 20px 0 10px 0;
-  width: 200px;
-  display: block;
-  height: 30px;
-  width: 162px;
+header .logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+  width: 100%;
 }
-.header .fa-arrow-left {
+header .logo .img {
+  width: 162px;
+  max-height: 100%;
+  padding: 20px 0px 12px 0px;
+}
+header .fa-arrow-left {
   position: absolute;
   left: 6px;
   font-size: 24px;
@@ -20,6 +40,16 @@
   color: black;
 }
 
+/**ancien code logo**/
+/**header .logo {
+        margin: 20px 0 10px 0;
+        width: 200px;
+        display: block;
+        height: 30px;
+        width: 162px;
+        justify-content: center;
+        align-items: center;
+    }**/
 .head_img {
   height: 360px;
   width: 100%;
@@ -36,33 +66,36 @@
   padding: 20px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+}
+
+.titre_heart {
   /** .card_container {}**/
 }
-.menu .titre_heart h1 {
+.titre_heart h1 {
   font-family: Shrikhand;
   font-weight: 400;
   font-size: 28px;
   font-style: italique;
   line-height: 40.82px;
 }
-.menu .titre_heart .icons_heart {
+.titre_heart .icons_heart {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /**position: absolute;**/
   color: black;
 }
-.menu .titre_heart .icons_heart .fa-heart {
+.titre_heart .icons_heart .fa-heart {
   position: absolute;
 }
-.menu .titre_heart .icons_heart .empty {
+.titre_heart .icons_heart .empty {
   top: 50px;
   left: 300px;
   font-size: 25px;
   cursor: pointer;
   position: absolute;
 }
-.menu .titre_heart .icons_heart .full {
+.titre_heart .icons_heart .full {
   top: 50px;
   left: 300px;
   font-size: 25px;
@@ -70,80 +103,39 @@
   opacity: 0;
   position: absolute;
 }
-.menu .titre_heart .icons_heart .full .full:hover {
+.titre_heart .icons_heart .full .full:hover {
   color: transparent;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
+  /** -webkit-background-clip: text;**/
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   transition: all 400ms;
   opacity: 1;
 }
-.menu .menuentrees {
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.titre_heart .menuentrees {
   animation: fadein;
   animation-duration: 4s;
   animation-timing-function: ease-in;
 }
-.menu .plats {
+.titre_heart .plats {
   animation: fadein;
   animation-duration: 4s;
   animation-timing-function: ease-in;
 }
-.menu .desserts {
+.titre_heart .desserts {
   animation: fadein;
   animation-duration: 6s;
   animation-timing-function: ease-in;
 }
-.menu .content_title {
-  border-bottom: solid;
-  width: 41px;
-  border-color: #99E2D0;
-}
-.menu .h3 {
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 4px;
-}
-.menu .card {
-  width: 100%;
-  height: 72px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-  position: relative;
-  margin-bottom: 10px;
-  overflow: hidden;
-  display: flex;
-}
-.menu .name {
-  /**padding: 13px;**/
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-  margin-top: 13px;
-  flex: 1;
-  min-width: 0;
-}
-.menu .card h4 {
-  margin-bottom: 7px;
-  margin-top: 0px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu .card p {
-  font-size: 15px;
-  margin: 0px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu .prix {
-  margin-right: 40px;
-  font-weight: bold;
-  margin-top: 39px;
-}
-.menu .check {
+.titre_heart .check {
   display: flex;
   background-color: #99e2d0;
   color: white;
@@ -156,23 +148,57 @@
   margin-right: -100px;
   transition: 400ms ease-out;
 }
-
-/**bouton commander**/
-.btn {
-  width: 186px;
-  display: block;
-  padding: 16px 25px;
-  border-radius: 25px;
-  font-family: "roboto";
+.titre_heart .content_title {
+  border-bottom: solid;
+  width: 41px;
+  border-color: #99E2D0;
+}
+.titre_heart h3 {
   font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #FFFFFF;
-  text-align: center;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFFFFF;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  transition: background 300ms, box-shadow 300ms;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+.titre_heart .card {
+  width: 100%;
+  height: 72px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  display: flex;
+}
+.titre_heart .name {
+  /**padding: 13px;**/
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 13px;
+  flex: 1;
+  min-width: 0;
+}
+.titre_heart .card h4 {
+  /**display: block;**/
+  margin-bottom: 7px;
+  margin-top: 0px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: bold;
+}
+.titre_heart .card p {
+  font-size: 15px;
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.titre_heart .prix {
+  margin-right: 40px;
+  font-weight: bold;
+  margin-top: 39px;
 }
 
 /**footer**/
