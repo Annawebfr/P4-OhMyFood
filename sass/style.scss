@@ -442,8 +442,70 @@ restaurant .card_titles .empty {
     right: 5%;
 }
 
+
+
+
 /**heart**/
 .heart {
+    position: absolute;
+    display: inline-block;
+    margin-right: 35px;
+    right: 10%;
+    top: 0;
+}
+
+.heart-checkbox {
+    display: none; /* Cache la case à cocher */
+}
+
+.fa-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 21px;
+    color: black;
+    cursor: pointer; /* Indique que c'est cliquable */
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-heart.full {
+    color: transparent;
+    background-image: linear-gradient(10deg, #ff79da, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 1;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Appliquer le style de cœur rempli lorsque la case à cocher est cochée */
+.heart-checkbox:checked + label .fa-heart.full {
+    color: #ff79da; /* Remplir le cœur avec la couleur rose */
+    background: none; /* Supprime le dégradé de fond */
+    -webkit-background-clip: unset;
+    background-clip: unset;
+}
+
+/* Effet de survol uniquement lorsque le cœur n'est pas activé */
+.heart-checkbox:not(:checked) + label .fa-heart.full:hover {
+    transform: scale(1.3); /* Agrandissement au survol si non coché */
+}
+
+.fa-heart.empty {
+    color: black; /* Couleur par défaut pour le cœur vide */
+}
+
+
+
+
+
+
+
+
+
+
+/**.heart {
     position: absolute;
     margin-right: 35px;
     right: 0;
@@ -462,16 +524,14 @@ restaurant .card_titles .empty {
     transition: all 0.4s ease-in-out;
     opacity: 1;
     background-clip: text;
-    overflow: hidden;
-    /**animation: heartAnimation 1s infinite;**/
-    /**background-image: variables.$button-background;**/
-}
+    overflow: hidden;}
+    
 
 .fa-heart {
     position: absolute;
 }
 
-/**@keyframes heartAnimation {
+@keyframes heartAnimation {
     0% {
         transform: scale(1);
     }
@@ -484,11 +544,6 @@ restaurant .card_titles .empty {
         transform: scale(1);
     }
 }**/
-
-
-
-
-
 
 /**code avant**/
 /**.heart {
