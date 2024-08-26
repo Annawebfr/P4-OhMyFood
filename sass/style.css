@@ -1,11 +1,11 @@
 /**Generale**/
 * {
-  font-family: "roboto sans-serif", "shrikhand";
+  margin: 0;
+  padding: 0;
 }
 
-/**Generale**/
 * {
-  font-family: "roboto" sans-serif, "shrikhand";
+  font-family: "roboto sans-serif", "shrikhand";
 }
 
 /**.shrikhand-regular {
@@ -36,9 +36,11 @@
     font-weight: 700;
     font-style: normal;
   }**/
-* {
+h1,
+h2 {
+  font-family: "Roboto-bold";
+  padding-left: 18px;
   margin: 0;
-  padding: 0;
 }
 
 /*h1,h2 {
@@ -117,11 +119,13 @@
   padding: 15px 0px 15px 0px;
   width: 100%;
   font-family: "roboto";
+  font-size: 16px;
   font-weight: 500;
   line-height: 19px;
   color: #353535;
   background: #EAEAEA;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
+  /**text-align: left;**/
 }
 .location_search {
   color: #353535;
@@ -282,8 +286,7 @@ a {
 .restaurant_cards img {
   width: 100%;
   height: 231px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -442,15 +445,15 @@ restaurant .card_titles .empty {
         z-index:1
         keyframe:**/
 /**   .full: keyframe qui va changer la z-index
-    .empty**/
+        .empty**/
 /** .full:hover {
-        color: transparent;
-        background-image: linear-gradient(10deg, #ff79da, #9356DC);
-        -webkit-background-clip: text;
-        background-clip: text;
-        transition: all 400ms;
-        opacity: 1;
-    }**/
+            color: transparent;
+            background-image: linear-gradient(10deg, #ff79da, #9356DC);
+            -webkit-background-clip: text;
+            background-clip: text;
+            transition: all 400ms;
+            opacity: 1;
+        }**/
 /**footer**/
 footer {
   display: flex;
@@ -497,4 +500,6 @@ footer {
 a {
   color: #FFFFFF;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
