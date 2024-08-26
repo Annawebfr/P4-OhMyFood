@@ -90,64 +90,60 @@ header {
 
 
 .titre_heart {
-
     h1 {
-        font-family: Shrikhand;
-        font-weight: 400;
-        font-size: 28px;
-        font-style: italique;
-        line-height: 40.82px;
+      font-family: Shrikhand;
+      font-weight: 400;
+      font-size: 28px;
+      font-style: italic;
+      line-height: 40.82px;
     }
-
+  
     .icons_heart {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        /**position: absolute;**/
-        color: black;
-
-        .fa-heart {
-            position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center; // Ajuste si nécessaire
+  
+      color: black;
+      position: relative; // Ajouté pour que les icônes soient positionnées relativement à ce conteneur
+  
+      .fa-heart {
+        font-size: 25px;
+        cursor: pointer;
+        position: absolute; // Assure que les icônes sont superposées
+      }
+  
+      .empty {
+        top: 50px;
+        left: 300px;
+      }
+  
+      .full {
+        top: 50px;
+        left: 300px;
+        opacity: 0; // Caché par défaut
+      }
+  
+      // Déplacement du hover sur un sélecteur indépendant
+      .empty:hover + .full {
+        opacity: 1;
+        animation: fadein 400ms forwards;
+        color: transparent;
+        background-image: linear-gradient(10deg, #ff79da, #9356DC);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+  
+      @keyframes fadein {
+        from {
+          opacity: 0;
         }
-
-        .empty {
-            top: 50px;
-            left: 300px;
-            font-size: 25px;
-            cursor: pointer;
-            position: absolute;
+        to {
+          opacity: 1;
         }
-
-        .full {
-            top: 50px;
-            left: 300px;
-            font-size: 25px;
-            cursor: pointer;
-            opacity: 0;
-            position: absolute;
-
-            .full:hover {
-                color: transparent;
-                background-image: linear-gradient(10deg, #ff79da, #9356DC);
-                /** -webkit-background-clip: text;**/
-                background-clip: text;
-                transition: all 400ms;
-                opacity: 1;
-            }
-
-            @keyframes fadein {
-                from {
-                    opacity: 0;
-                }
-
-                to {
-                    opacity: 1;
-                }
-
-            }
-        }
+      }
     }
-
+  }
+  
     /** .card_container {}**/
     .menuentrees {
         animation: fadein;
