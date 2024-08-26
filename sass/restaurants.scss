@@ -88,7 +88,6 @@ header {
     border-top-left-radius: 40px;
 }
 
-
 .titre_heart {
     h1 {
         font-family: Shrikhand;
@@ -97,77 +96,65 @@ header {
         font-style: italic;
         line-height: 40.82px;
     }
-
-    /**heart**/
-    .icons_heart {
-        i {
-            position: absolute;
-            font-size: 20px;
-            margin: 30px 10px 8px 0;
-            right: 10%;
-        }
-
-        .fa-solid {
-            opacity: 0;
-
-            &:hover {
-                opacity: 1;
-                color: transparent;
-                background-clip: text;
-                --webkit-background-clip: text;
-                transition: all 0.4s ease-in-out;
-                background-image: variables.$button-background;
-                overflow: hidden;
-            }
-        }
-    }
+ /**heart**/
+.heart {
+    position: absolute;
+    display: inline-block;
+    margin-right: 25px;
+    right: 10%;
+    top: 0;
+    width: 22px;
+    height: 21px;
 }
 
-/** ancien codes heart
-    .icons_heart {
-      display: flex;
-      align-items: center;
-      justify-content: center; 
-      color: black;
-      position: relative; 
-  
-      .fa-heart {
-        font-size: 25px;
-        cursor: pointer;
-        position: absolute; 
-      }
-  
-      .empty {
-        top: 50px;
-        left: 300px;
-      }
-  
-      .full {
-        top: 50px;
-        left: 300px;
-        opacity: 0; 
-      }
-  
-    
-      .empty:hover + .full {
-        opacity: 1;
-        animation: fadein 400ms forwards;
-        color: transparent;
-        background-image: linear-gradient(10deg, #ff79da, #9356DC);
-        -webkit-background-clip: text;
-        background-clip: text;
-      }
-  
-      @keyframes fadein {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    }**/
+.heart_checkbox {
+    display: none;
+    /* Cache la case à cocher */
+}
 
+.fa-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 21px;
+    color: black;
+    cursor: pointer;
+    /* Indique que c'est cliquable */
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-heart.full {
+    color: transparent;
+    background-image: linear-gradient(10deg, #ff79da, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 1;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 22px;
+    height: 21px;
+}
+
+/* Appliquer le style de cœur rempli lorsque la case à cocher est cochée */
+.heart_checkbox:checked+label .fa-heart.full {
+    color: #ff79da;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+}
+
+/* Effet de survol uniquement lorsque le cœur n'est pas activé */
+.heart_checkbox:not(:checked)+label .fa-heart.full:hover {
+    transform: scale(1.3);/* Agrandissement au survol si non coché */
+}
+    
+
+.fa-heart.empty {
+    color: black;/* Couleur par défaut pour le cœur vide */
+    width: 22px;
+    height: 21px;
+}
 
 
 
