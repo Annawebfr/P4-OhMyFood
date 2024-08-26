@@ -96,7 +96,6 @@ header .fa-arrow-left {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /**position: absolute;**/
   color: black;
 }
 .titre_heart .icons_heart .fa-heart {
@@ -120,9 +119,8 @@ header .fa-arrow-left {
 .titre_heart .icons_heart .full .full:hover {
   color: transparent;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
-  /** -webkit-background-clip: text;**/
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   transition: all 400ms;
   opacity: 1;
 }
