@@ -117,14 +117,10 @@ h2 {
     }
 }
 
-
-
-
 .main_container {
     z-index: 2;
     position: relative;
 }
-
 
 
 /** header logo**/
@@ -535,8 +531,8 @@ footer {
 .footer_logo {
     width: 139px;
     filter: invert(1);
-    /** height: 27px;**/
-    /**  padding: 20px 0;**/
+   /** height: 27px;**/
+  /**  padding: 20px 0;**/
     color: #FFFFFF;
 }
 
@@ -561,7 +557,7 @@ footer {
     font-weight: 500;
     line-height: 18.75px;
     /**text-align: left;**/
-
+    
 }
 
 .footer_links_simple {
@@ -584,7 +580,7 @@ a {
 
 
 
-
+ 
 @media (min-width: 1025px) {
     .fonction {
         flex-direction: row;
