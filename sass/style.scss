@@ -323,21 +323,21 @@ a {
 
 /** restaurant **/
 .restaurant {
-  /**  grid-column: 2 / 3;**/
+    /**  grid-column: 2 / 3;**/
     display: flex;
     flex-flow: column;
     gap: 26px;
     margin-top: 50px;
     padding-bottom: 66px;
-    background-color: #F6F6F6; 
+    background-color: #F6F6F6;
     padding-left: 20px;
-    padding-right: 20px;  
+    padding-right: 20px;
 }
 
 .titre_restaurants {
-   /** margin-left: 15px;**/
+    /** margin-left: 15px;**/
     margin-top: 50px;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
@@ -358,8 +358,8 @@ a {
 .restaurant_cards {
     background-color: #ffffff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  /**  padding-bottom: 20px;**/
-   /** width: 90%;**/
+    /**  padding-bottom: 20px;**/
+    /** width: 90%;**/
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -375,7 +375,7 @@ a {
 }
 
 .card_content {
-  /**  position: relative;**/
+    /**  position: relative;**/
     padding: 16px;
     color: #000000;
     /** display: flex;
@@ -389,14 +389,14 @@ a {
 }
 
 .subtitle_resto {
-    color: #000;
     margin: 10px;
-    font-family: Roboto;
+   /** line-height: 19.92px;**/
+    /**text-align: left;**/
+    font-family: "Roboto", sans-serif;
     font-size: 17px;
     font-weight: 300;
-    line-height: 19.92px;
-    /**text-align: left;**/
-
+    margin-top: 5px;
+    color: #000;
 }
 
 a {
@@ -462,18 +462,14 @@ restaurant .card_titles .empty {
     right: 5%;
 }
 
-
-
-
 /**heart**/
 .heart {
     position: absolute;
-    display: inline-block;
-    margin-right: 25px;
-    right: 10%;
-    top: 0;
+    /** display: inline-block;**/
     width: 22px;
     height: 21px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
 .heart-checkbox {
@@ -498,21 +494,18 @@ restaurant .card_titles .empty {
     background-image: linear-gradient(10deg, #ff79da, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-    opacity: 1;
+    /** opacity: 1;
     overflow: hidden;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 22px;
-    height: 21px;
+    height: 21px;**/
 }
 
-/* Appliquer le style de cœur rempli lorsque la case à cocher est cochée */
 .heart-checkbox:checked+label .fa-heart.full {
     color: #ff79da;
-    /* Remplir le cœur avec la couleur rose */
     background: none;
-    /* Supprime le dégradé de fond */
-    -webkit-background-clip: unset;
-    background-clip: unset;
+    /** -webkit-background-clip: unset;**/
+    /** background-clip: unset;**/
 }
 
 /* Effet de survol uniquement lorsque le cœur n'est pas activé */
@@ -534,15 +527,16 @@ footer {
     display: flex;
     flex-flow: column;
     gap: 16px;
-    padding: 25px 22px 22px 25px;
+    /**  padding: 25px 22px 22px 25px;**/
+    padding: 25px;
     background: #353535;
 }
 
 .footer_logo {
     width: 139px;
-    height: 27px;
-    padding: 20px 0;
     filter: invert(1);
+    /** height: 27px;**/
+    /**  padding: 20px 0;**/
     color: #FFFFFF;
 }
 
@@ -550,22 +544,24 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: rgb(255, 255, 255);
-    gap: 10px;
+    color: #FFFFFF;
+    /**gap: 10px;**/
     list-style: none;
+
 }
 
 .footer_links_bold {
     display: flex;
     justify-content: flex-start;
     gap: 12px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
     /**text-align: left;**/
+
 }
 
 .footer_links_simple {
@@ -588,42 +584,23 @@ a {
 
 
 
-@media (min-width:1025px) {
+
+@media (min-width: 1025px) {
     .fonction {
-        display: flex;
         flex-direction: row;
-        /**  margin-left: 180px;**/
-        /**margin-right: 180px;**/
-
-        .fonction_btn {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            /** gap: 25px;**/
-            /**margin: 0 30px;**/
-
-        }
-
+        justify-content: space-between;
     }
 
     .restaurant {
         padding-left: 150px;
         padding-right: 150px;
+    }
 
-        .restaurant_card {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
+    .restaurant_card {
+        display: flex;
     }
 
     .card_content {
         width: 50%;
     }
-
-
-
-    /**footer {
-        @include footer
-    }**/
 }
