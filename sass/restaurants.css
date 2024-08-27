@@ -128,7 +128,7 @@ header .fa-arrow-left {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 80px;
-  margin-right: -100px;
+  /**margin-right: -100px;**/
   transition: 400ms ease-out;
 }
 
@@ -197,10 +197,15 @@ h3 {
   text-align: left;
 }
 
-.prix {
+.prix p {
   margin-right: 40px;
-  font-weight: bold;
   margin-top: 39px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  /** font-weight: 700;**/
+  /**line-height: 17.63px;**/
+  text-align: center;
 }
 
 /**footer**/
