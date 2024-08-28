@@ -58,6 +58,13 @@ header {
     border-top-left-radius: 40px;
 }
 
+/**&:hover {
+    .check {
+        margin: 0px;
+    }
+}/**
+
+
 /**heart**/
 .heart {
     position: absolute;
@@ -159,6 +166,7 @@ h1 {
     margin-right: -100px;
     transition: 400ms ease-out;
 }
+
 
 .content_title {
     margin-top: 25px;
