@@ -58,7 +58,7 @@ header .fa-arrow-left {
 /**heart**/
 .heart {
   position: absolute;
-  /** display: inline-block;**/
+  display: inline-block;
   width: 22px;
   height: 21px;
   cursor: pointer;

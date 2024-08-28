@@ -61,19 +61,20 @@ header {
 /**heart**/
 .heart {
     position: absolute;
-    /** display: inline-block;**/
+    display: inline-block;
     width: 22px;
     height: 21px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
+
 h1 {
     font-family: Shrikhand;
     font-weight: 400;
     font-size: 28px;
     font-style: italic;
-     line-height: 41px;
-     margin-right: 10px;
+    line-height: 41px;
+    margin-right: 10px;
 }
 
 .heart-checkbox {
@@ -98,7 +99,7 @@ h1 {
     background-image: linear-gradient(10deg, #ff79da, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-    
+
     opacity: 1;
     overflow: hidden;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
