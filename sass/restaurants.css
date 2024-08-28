@@ -82,8 +82,7 @@ h1 {
 }
 
 .heart-checkbox {
-  display: none;
-  /* Cache la case à cocher */
+  display: none; /* Cache la case à cocher */
 }
 
 .fa-heart {
@@ -93,8 +92,7 @@ h1 {
   width: 22px;
   height: 21px;
   color: black;
-  cursor: pointer;
-  /* Indique que c'est cliquable */
+  cursor: pointer; /* Indique que c'est cliquable */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -111,16 +109,15 @@ h1 {
 }
 
 .heart-checkbox:checked + label .fa-heart.full {
-  color: #ff79da;
   background: none;
+  /** color: #ff79da;**/
   /** -webkit-background-clip: unset;**/
   /** background-clip: unset;**/
 }
 
 /* Effet de survol uniquement lorsque le cœur n'est pas activé */
 .heart-checkbox:not(:checked) + label .fa-heart.full:hover {
-  transform: scale(1.3);
-  /* Agrandissement au survol si non coché */
+  transform: scale(1.3); /* Agrandissement au survol si non coché */
 }
 
 .fa-heart.empty {
