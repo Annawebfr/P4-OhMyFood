@@ -74,8 +74,7 @@ header .fa-arrow-left {
   /* Alignement vertical */
 }
 .titre_heart h1 {
-  margin-right: 10px;
-  /* Marge à droite pour séparer la rubrique du cœur */
+  margin-right: 10px; /* Marge à droite pour séparer la rubrique du cœur */
 }
 .titre_heart .heart .heart_checkbox {
   display: none;
@@ -85,6 +84,9 @@ header .fa-arrow-left {
   position: absolute;
   width: 22px;
   height: 21px;
+  left: 312px;
+  gap: 0px;
+  opacity: 0px;
   display: inline-block;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
@@ -99,8 +101,7 @@ header .fa-arrow-left {
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .titre_heart .heart .fa-heart.empty {
-  color: black;
-  /* Couleur par défaut pour le cœur vide */
+  color: black; /* Couleur par défaut pour le cœur vide */
 }
 .titre_heart .heart_checkbox:checked + .heart .fa-heart.full {
   color: #ff79da;
@@ -109,8 +110,7 @@ header .fa-arrow-left {
   background-clip: unset;
 }
 .titre_heart .heart_checkbox:not(:checked) + .heart .fa-heart.full:hover {
-  transform: scale(1.3);
-  /* Agrandissement au survol si non coché */
+  transform: scale(1.3); /* Agrandissement au survol si non coché */
 }
 .titre_heart .card_menuentrees,
 .titre_heart .card_menuplat,
