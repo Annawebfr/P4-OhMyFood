@@ -537,13 +537,14 @@ a {
 
 
  
-/**@media (min-width: 1025px) {
+@media (min-width: 768px) {
     .fonction {
+        display:flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .restaurant {
+    /**.restaurant {
         padding-left: 150px;
         padding-right: 150px;
     }
@@ -554,7 +555,7 @@ a {
 
     .card_content {
         width: 50%;
-    }
-}**/
+    }**/
+}
 
 

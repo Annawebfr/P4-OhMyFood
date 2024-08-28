@@ -55,6 +55,13 @@ header .fa-arrow-left {
   border-top-left-radius: 40px;
 }
 
+/**&:hover {
+    .check {
+        margin: 0px;
+    }
+}/**
+
+
 /**heart**/
 .heart {
   position: absolute;
@@ -126,7 +133,7 @@ h1 {
 .card_menuentrees,
 .card_menuplat,
 .card_menudesserts {
-  animation: fadein 4s ease-in;
+  animation: fadein 3s ease-in;
 }
 
 @keyframes fadein {
@@ -147,7 +154,7 @@ h1 {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 80px;
-  margin-right: -50px;
+  margin-right: -100px;
   transition: 400ms ease-out;
 }
 
