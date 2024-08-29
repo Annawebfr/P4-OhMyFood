@@ -20,4 +20,9 @@
 .btn:hover {
   background: linear-gradient(#ff90e7, #a16eff);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/** voir avec mon mentor si je dois le mettre ainsi afin que le button s'aligne center**/
+a .btn {
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
