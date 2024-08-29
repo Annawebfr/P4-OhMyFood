@@ -153,8 +153,13 @@ h1 {
 }
 
 
-.check {
-    display: flex;
+card-menu:hover .check {
+    width: 60px;
+    background-color: #99E2D0;
+    border-radius: 0 20px 20px 0;
+    transition: 300ms ease-out;
+   
+    /** display: flex;
     background-color: #99e2d0;
     color: white;
     align-items: center;
@@ -164,8 +169,31 @@ h1 {
     border-bottom-right-radius: 20px;
     width: 80px;
     margin-right: -100px;
-    transition: 400ms ease-out;
+    transition: 400ms ease-out;**/
 }
+.fa-circle-check{
+    color: #99E2D0;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .content_title {
