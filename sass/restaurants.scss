@@ -154,7 +154,8 @@ h1 {
 
 
 .check {
-     display: flex;
+    display: flex;
+    position: absolute;
     background-color: #99e2d0;
     color: white;
     align-items: center;
@@ -164,18 +165,19 @@ h1 {
     border-bottom-right-radius: 20px;
     width: 30px;
     height: 100%;
-    position: absolute;
     right: 0;
     top: 0;
-    transform: translateX(100%); /* Position initiale hors de l'écran */
-    transition: transform 400ms ease-out; /* Transition pour l'animation */
+ /**   transform: translateX(100%); /* Position initiale hors de l'écran */
+    transition: transform 400ms ease-out;
+    /* Transition pour l'animation */
 }
 
-  .card:hover .check {
-    transform: translateX(0); /* Fait glisser la coche dans l'écran au survol */
-  }
+.card:hover .check {
+    transform: translateX(0);
+    /* Fait glisser la coche dans l'écran au survol */
+}
 
-  
+
 
 
 .content_title {
