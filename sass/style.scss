@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
-$primary-color: #9356DC $secondary-color #FF79DA $tertiaire-color #99E2D0
+/**$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiaire-color: #99E2D0;**/
 
-    /**h1,h2 {
+/**h1,h2 {
     font-family: "Roboto-bold";
     /** margin: /
     font-weight: 700;
@@ -17,7 +19,7 @@ $primary-color: #9356DC $secondary-color #FF79DA $tertiaire-color #99E2D0
 
 
 /**Loader**/
-    .loading {
+.loading {
     background-color: #FF79DA;
     width: 100vw;
     height: 100vh;
@@ -77,16 +79,15 @@ $primary-color: #9356DC $secondary-color #FF79DA $tertiaire-color #99E2D0
 }
 
 /** header logo**/
-/.logo {
-    display: flex;
+.logo {
     /**position: relative;**/
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
     width: 100%;
-    padding: 20px 0;
 
     img {
         width: 162px;
@@ -147,7 +148,6 @@ h1 {
     margin-top: 17px;
     text-align: center;
     color: #353535;
-
 }
 
 .reservation .btn {
@@ -155,33 +155,9 @@ h1 {
 }
 
 
-/**.btn {
-    border-radius: 25px;
-    color: #ffffff;
-    background: linear-gradient(#ff79da, #9356dc);
-    border: none;
-    height: 50px;
-    width: 220px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: 0.3s;
-    cursor: pointer;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
-    &:hover {
-        background: linear-gradient(#ff90e7, #a16eff);
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-    }
-}**/
-
 a {
     color: #FFFFFF;
     text-decoration: none;
-
 }
 
 .titre_reserver {
@@ -317,7 +293,7 @@ a {
 }
 
 .card_content {
-    /**  position: relative;**/
+    position: relative;
     padding: 16px;
     color: #000000;
     /** display: flex;**/
@@ -331,7 +307,7 @@ a {
 }
 
 .subtitle_resto {
-    margin: 10px;
+    /** margin: 10px;**/
     /** line-height: 19.92px;**/
     /**text-align: left;**/
     font-family: "Roboto", sans-serif;
@@ -407,12 +383,9 @@ restaurant .card_titles .empty {
 
 /**heart**/
 .heart {
-    position: absolute;
-    display: inline-block;
-    width: 22px;
-    height: 21px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    z-index: 99;
+    pointer-events: none;
 }
 
 /**h1 {
@@ -424,46 +397,18 @@ restaurant .card_titles .empty {
     margin-right: 10px;
 }**/
 
-.heart-checkbox {
-    display: none;
-    /* Cache la case à cocher */
-}
 
 .fa-heart {
     position: absolute;
+    right: 0;
     top: 0;
+    /** top: 0;
     left: 0;
     width: 22px;
     height: 21px;
     color: black;
     cursor: pointer;
-    /* Indique que c'est cliquable */
-    transition: transform 0.3s ease-in-out;
-}
-
-.fa-heart.full {
-    color: transparent;
-    background-image: linear-gradient(10deg, #ff79da, #9356DC);
-    -webkit-background-clip: text;
-    background-clip: text;
-    opacity: 1;
-    overflow: hidden;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    width: 22px;
-    height: 21px;
-}
-
-.heart-checkbox:checked+label .fa-heart.full {
-    background: none;
-    /** color: #ff79da;**/
-    /** -webkit-background-clip: unset;**/
-    /** background-clip: unset;**/
-}
-
-/* Effet de survol uniquement lorsque le cœur n'est pas activé */
-.heart-checkbox:not(:checked)+label .fa-heart.full:hover {
-    transform: scale(1.3);
-    /* Agrandissement au survol si non coché */
+    transition: transform 0.3s ease-in-out;**/
 }
 
 .fa-heart.empty {
@@ -472,6 +417,27 @@ restaurant .card_titles .empty {
     width: 22px;
     height: 21px;
 }
+
+.fa-heart.full {
+    color: transparent;
+    background-image: linear-gradient(10deg, #ff79da, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
+    opacity: 0;
+    overflow: hidden;
+    /**transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;**/
+    width: 22px;
+    height: 21px;
+}
+
+.heart:active .fa-heart.full {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
 
 
 /**fadein**/
