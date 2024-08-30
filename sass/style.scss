@@ -20,18 +20,8 @@ $tertiaire-color #99E2D0
 
 
 /**Loader**/
-/**.loading
-background-color: #FFFFFF;
-    width: 100vw;
-    height: 100vh;
-    z-index: 3;
-    position: fixed;
-    animation-name: animation_opacity;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;**/
 
-.loading {
+    .loading {
     background-color: #FF79DA;
     width: 100vw;
     height: 100vh;
@@ -41,6 +31,10 @@ background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
     animation: animation_opacity 2s forwards;
+   /** animation-name: animation_opacity;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;**/
 
 
     &_container {
