@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-$primary-color: #9356DC 
-$secondary-color #FF79DA 
-$tertiaire-color #99E2D0 
+$primary-color: #9356DC $secondary-color #FF79DA $tertiaire-color #99E2D0
 
-
-/**h1,h2 {
+    /**h1,h2 {
     font-family: "Roboto-bold";
     /** margin: /
     font-weight: 700;
@@ -20,7 +17,6 @@ $tertiaire-color #99E2D0
 
 
 /**Loader**/
-
     .loading {
     background-color: #FF79DA;
     width: 100vw;
@@ -31,10 +27,11 @@ $tertiaire-color #99E2D0
     justify-content: center;
     align-items: center;
     animation: animation_opacity 2s forwards;
-   /** animation-name: animation_opacity;
+    /** animation-name: animation_opacity;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;**/
+
 
 
     &_container {
