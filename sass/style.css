@@ -494,16 +494,16 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
-  /**.restaurant {
-      padding-left: 150px;
-      padding-right: 150px;
-  }
+  /** .restaurant {
+       padding-left: 150px;
+       padding-right: 150px;
+   }
 
-  .restaurant_card {
-      display: flex;
-  }
+   .restaurant_card {
+       display: flex;
+   }
 
-  .card_content {
-      width: 50%;
-  }**/
+   .card_content {
+       width: 50%;
+   }**/
 }/*# sourceMappingURL=style.css.map */
