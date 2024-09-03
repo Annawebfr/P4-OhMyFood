@@ -80,6 +80,7 @@ $tertiaire-color: #99E2D0;**/
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);
   width: 100%;
+  padding: 10px;
 }
 .logo img {
   width: 162px;
@@ -376,7 +377,7 @@ restaurant .card_titles .empty {
   top: 25%;
   left: 80%;
   position: absolute;
-  top: 83%;
+  top: 30%;
   right: 10%;
   transform: translateY(-50%);
   font-size: 25px;
@@ -387,7 +388,7 @@ restaurant .card_titles .empty {
   position: absolute;
   width: 22px;
   height: 21px;
-  top: 83%;
+  top: 63%;
   right: 25%;
   color: transparent;
   font-size: 25px;

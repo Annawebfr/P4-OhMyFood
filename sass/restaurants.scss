@@ -64,7 +64,14 @@ header {
     }
 }
 
-
+h1 {
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 41px;
+    margin-right: 10px;
+}
 /**heart**/
 .heart {
     position: absolute;
@@ -75,20 +82,10 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-h1 {
-    font-family: Shrikhand;
-    font-weight: 400;
-    font-size: 28px;
-    font-style: italic;
-    line-height: 41px;
-    margin-right: 10px;
-}
-
 .heart-checkbox {
     display: none;
     /* Cache la case à cocher */
 }
-
 .fa-heart {
     position: absolute;
     /** top: 0;
@@ -170,9 +167,7 @@ h1 {
     top: 0;    
     transform: translateX;
   /**  transform: translateX(100%);**/
-    /* Position initiale hors de l'écran 
     transition: transform 400ms ease-out;
-    /* Transition pour l'animation */
 }
 
 .card:hover .check {
