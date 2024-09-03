@@ -385,35 +385,25 @@ restaurant .card_titles .empty {
 .heart {
     cursor: pointer;
     z-index: 99;
-    pointer-events: none;
+    /** pointer-events: none;**/
 }
 
 .fa-heart {
     position: absolute;
-    /** right: 0;
-    top: 0;**/
-    /** top: 0;
-    left: 0;
-    width: 22px;
-    height: 21px;
-    color: black;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;**/
 }
 
 .fa-heart.empty {
     color: black;
-    /* Couleur par défaut pour le cœur vide */
     width: 22px;
     height: 21px;
     top: 25%;
     left: 80%;
-    /**position: absolute;
+    position: absolute;
     top: 83%;
     right: 10%;
     transform: translateY(-50%);
     font-size: 25px;
-    cursor: pointer;**/
+    cursor: pointer;
 }
 
 .fa-heart.full {
@@ -421,19 +411,17 @@ restaurant .card_titles .empty {
     width: 22px;
     height: 21px;
     top: 83%;
-    right: 10%;
+    right: 25%;
     color: transparent;
     font-size: 25px;
     background-image: linear-gradient(10deg, #ff79da, #9356DC);
     -webkit-background-clip: text;
-    background-clip: text;
-    opacity: 0;
+    background-clip: text opacity: 0;
     overflow: hidden;
     transform: translateY(-50%);
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    
 }
-  
+
 
 .heart:active .fa-heart.full {
     opacity: 1;
@@ -443,93 +431,93 @@ restaurant .card_titles .empty {
 
 
 /**fadein**/
-    .card_menuentrees,
-    .card_menuplat,
-    .card_menudesserts {
-        animation: fadein 3s ease-in;
+.card_menuentrees,
+.card_menuplat,
+.card_menudesserts {
+    animation: fadein 3s ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
     }
 
-    @keyframes fadein {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
+    100% {
+        opacity: 1;
     }
+}
 
-    /**footer**/
-    footer {
+/**footer**/
+footer {
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    /**  padding: 25px 22px 22px 25px;**/
+    padding: 25px;
+    background: #353535;
+}
+
+.footer_logo {
+    width: 139px;
+    filter: invert(1);
+    /** height: 27px;**/
+    /**  padding: 20px 0;**/
+    color: #FFFFFF;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    /**gap: 10px;**/
+    list-style: none;
+
+}
+
+.footer_links_bold {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    /**text-align: left;**/
+
+}
+
+.footer_links_simple {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.footer_links_bold .fa-solid {
+    width: 16px;
+    color: #FFFFFF
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .fonction {
         display: flex;
-        flex-flow: column;
-        gap: 16px;
-        /**  padding: 25px 22px 22px 25px;**/
-        padding: 25px;
-        background: #353535;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .footer_logo {
-        width: 139px;
-        filter: invert(1);
-        /** height: 27px;**/
-        /**  padding: 20px 0;**/
-        color: #FFFFFF;
-    }
-
-    .footer_links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        color: #FFFFFF;
-        /**gap: 10px;**/
-        list-style: none;
-
-    }
-
-    .footer_links_bold {
-        display: flex;
-        justify-content: flex-start;
-        gap: 12px;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 18.75px;
-        /**text-align: left;**/
-
-    }
-
-    .footer_links_simple {
-        font-family: Roboto;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 18.75px;
-        text-align: left;
-    }
-
-    .footer_links_bold .fa-solid {
-        width: 16px;
-        color: #FFFFFF
-    }
-
-    a {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-
-
-
-    @media (min-width: 768px) {
-        .fonction {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        /** .restaurant {
+    /** .restaurant {
         padding-left: 150px;
         padding-right: 150px;
     }
@@ -541,4 +529,4 @@ restaurant .card_titles .empty {
     .card_content {
         width: 50%;
     }**/
-    }
+}

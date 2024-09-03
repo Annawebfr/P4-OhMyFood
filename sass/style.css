@@ -363,7 +363,7 @@ restaurant .card_titles .empty {
 .heart {
   cursor: pointer;
   z-index: 99;
-  pointer-events: none;
+  /** pointer-events: none;**/
 }
 
 .fa-heart {
@@ -399,14 +399,14 @@ restaurant .card_titles .empty {
   width: 22px;
   height: 21px;
   top: 83%;
-  right: 10%;
+  right: 25%;
   color: transparent;
   font-size: 25px;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
   -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 0;
-  overflow: hidden;
+  /** background-clip: text;
+   opacity: 0;
+   overflow: hidden;**/
   transform: translateY(-50%);
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
