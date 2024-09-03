@@ -233,16 +233,6 @@ a {
   padding-right: 20px;
 }
 
-.titre_restaurants {
-  /** margin-left: 15px;**/
-  margin-top: 50px;
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28.13px;
-  /**text-align: left;**/
-}
-
 /**.cards {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -253,6 +243,16 @@ a {
     width: 100%;
     height: 174px;
 }**/
+.titre_restaurants {
+  /** margin-left: 15px;**/
+  margin-top: 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+  /**text-align: left;**/
+}
+
 .restaurant_cards {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
@@ -333,7 +333,7 @@ restaurant .card_titles .empty {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 40px;
   padding: 5px 15px;
   color: #008766;
   background-color: #99e2d0;
@@ -388,8 +388,10 @@ restaurant .card_titles .empty {
   position: absolute;
   width: 22px;
   height: 21px;
-  top: 63%;
-  right: 25%;
+  /**top: 63%;
+  right: 25%;**/
+  left: 80%;
+  top: 30%;
   color: transparent;
   font-size: 25px;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
