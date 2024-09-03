@@ -384,6 +384,8 @@ restaurant .card_titles .empty {
   /* Couleur par défaut pour le cœur vide */
   width: 22px;
   height: 21px;
+  top: 25%;
+  left: 80%;
   /**position: absolute;
       top: 83%;
       right: 10%;
