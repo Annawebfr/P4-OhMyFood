@@ -369,7 +369,7 @@ restaurant .card_titles .empty {
 .fa-heart {
   position: absolute;
   /** right: 0;
-   top: 0;**/
+  top: 0;**/
   /** top: 0;
   left: 0;
   width: 22px;
@@ -387,30 +387,28 @@ restaurant .card_titles .empty {
   top: 25%;
   left: 80%;
   /**position: absolute;
-      top: 83%;
-      right: 10%;
-      transform: translateY(-50%);
-      font-size: 25px;
-      cursor: pointer;**/
+  top: 83%;
+  right: 10%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  cursor: pointer;**/
 }
 
 .fa-heart.full {
+  position: absolute;
   width: 22px;
   height: 21px;
+  top: 83%;
+  right: 10%;
   color: transparent;
+  font-size: 25px;
   background-image: linear-gradient(10deg, #ff79da, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
   opacity: 0;
   overflow: hidden;
-  /**transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;**/
-  /** position: absolute;
-  top: 83%;
-  right: 10%;
   transform: translateY(-50%);
-  font-size: 25px;
-  cursor: pointer;
-  opacity: 0;**/
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .heart:active .fa-heart.full {
@@ -498,15 +496,15 @@ a {
     justify-content: space-between;
   }
   /** .restaurant {
-       padding-left: 150px;
-       padding-right: 150px;
-   }
+      padding-left: 150px;
+      padding-right: 150px;
+  }
 
-   .restaurant_card {
-       display: flex;
-   }
+  .restaurant_card {
+      display: flex;
+  }
 
-   .card_content {
-       width: 50%;
-   }**/
+  .card_content {
+      width: 50%;
+  }**/
 }/*# sourceMappingURL=style.css.map */

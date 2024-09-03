@@ -435,20 +435,10 @@ restaurant .card_titles .empty {
 }
   
 
-
-transform: translateY(-50%);
-font-size: 25px;
-
-opacity: 0;
-
-
 .heart:active .fa-heart.full {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
-
-
-
 
 
 
