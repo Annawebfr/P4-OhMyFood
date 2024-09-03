@@ -58,11 +58,11 @@ header {
     border-top-left-radius: 40px;
 }
 
-&:hover {
+/**&:hover {
     .check {
         margin: 0px;
     }
-}
+}**/
 
 h1 {
     font-family: Shrikhand;
@@ -72,9 +72,12 @@ h1 {
     line-height: 41px;
     margin-right: 10px;
 }
+
 /**heart**/
 .heart {
     position: absolute;
+    top: 35px;
+    right: 35px;
     display: inline-block;
     width: 22px;
     height: 21px;
@@ -86,6 +89,7 @@ h1 {
     display: none;
     /* Cache la case à cocher */
 }
+
 .fa-heart {
     position: absolute;
     /** top: 0;
@@ -111,7 +115,7 @@ h1 {
     background-image: linear-gradient(10deg, #ff79da, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-    opacity: 1;
+   opacity: 1;
     overflow: hidden;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 22px;
@@ -162,11 +166,11 @@ h1 {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 30px;
-   height: 100%;
+    height: 100%;
     right: 0;
-    top: 0;    
+    top: 0;
     transform: translateX;
-  /**  transform: translateX(100%);**/
+    /**  transform: translateX(100%);**/
     transition: transform 400ms ease-out;
 }
 
@@ -246,10 +250,8 @@ h3 {
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
-    /**line-height: 17.63px;**/
     text-align: left;
-
-
+    /**line-height: 17.63px;**/
 }
 
 .prix p {
@@ -258,10 +260,9 @@ h3 {
     font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 15px;
+    text-align: center;
     /** font-weight: 700;**/
     /**line-height: 17.63px;**/
-    text-align: center;
-
 }
 
 /**footer**/
