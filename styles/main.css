@@ -22,7 +22,7 @@
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/** voir avec mon mentor si je dois le mettre ainsi afin que le button s'aligne center**/
+/** voir avec mon mentor si je dois le mettre ainsi afin que le button s'aligne center
 a .btn {
-  justify-content: center;
-}/*# sourceMappingURL=main.css.map */
+    justify-content: center;
+}**//*# sourceMappingURL=main.css.map */
