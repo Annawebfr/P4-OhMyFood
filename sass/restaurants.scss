@@ -152,7 +152,8 @@ h1 {
 
 .card .check {
     display: flex;
-    position: absolute;
+   /** position: absolut;**/
+   order: 2;
     background-color: #99e2d0;
     color: white;
     align-items: center;
@@ -165,8 +166,10 @@ h1 {
     right: 0;
     top: 0;
    /** margin-right: -100px;**/
-    transform: translateX(100%);   /* La coche est initialement hors de l'écran à droite */
+   margin-left: auto;
+    transform: translateX(130%);   /* La coche est initialement hors de l'écran à droite */
     transition: transform 400ms ease-out;  /* Animation douce pour le glissement */
+    z-index: 2;
 }
 
 .card:hover .check {
@@ -194,15 +197,13 @@ h3 {
 
 .card {
     display: flex;
+    position: relative;
+    margin-bottom: 10px;
     width: 100%;
     height: 72px;
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
-    position: relative;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
     align-items: center;
     justify-content: space-between;
 }
@@ -238,7 +239,7 @@ h3 {
 
 
 .card p {
-    margin: 0px;
+   margin: 0px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -247,10 +248,11 @@ h3 {
     font-weight: 300;
     text-align: left;
     /**line-height: 17.63px;**/
+    order: 1;
 }
 
 .prix p {
-    margin-right: 15px;
+    margin-right: -100px;
     margin-top: 39px;
     font-family: Roboto, sans-serif;
     font-weight: bold;
