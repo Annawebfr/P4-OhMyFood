@@ -115,7 +115,7 @@ h1 {
     background-image: linear-gradient(10deg, #ff79da, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-   opacity: 1;
+    opacity: 1;
     overflow: hidden;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 22px;
@@ -155,7 +155,7 @@ h1 {
 }
 
 
-.check {
+.card .check {
     display: flex;
     position: absolute;
     background-color: #99e2d0;
@@ -169,9 +169,10 @@ h1 {
     height: 100%;
     right: 0;
     top: 0;
-    transform: translateX;
-    /**  transform: translateX(100%);**/
+    transform: translateX(100%);
+    /* La coche est initialement hors de l'écran à droite */
     transition: transform 400ms ease-out;
+    /* Animation douce pour le glissement */
 }
 
 .card:hover .check {
@@ -179,8 +180,10 @@ h1 {
     /* Fait glisser la coche dans l'écran au survol */
 }
 
-
-
+.check i {
+    font-size: 16px;
+    /* Ajustez la taille de l'icône de la coche */
+}
 
 .content_title {
     margin-top: 25px;
