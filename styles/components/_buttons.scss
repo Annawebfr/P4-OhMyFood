@@ -1,3 +1,10 @@
+
+.btn_container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    margin-top: 15px; /* Éventuellement ajuster pour la mise en page */
+}
+
 .btn {
     justify-content: center;
     display: flex;
@@ -22,6 +29,7 @@
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     }
 }
+
 
 /** voir avec mon mentor si je dois le mettre ainsi afin que le button s'aligne center
 a .btn {

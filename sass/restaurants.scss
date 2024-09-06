@@ -118,7 +118,7 @@ h1 {
     }
 }
 
-.card .check {
+/**.card .check {
     display: flex;
     /** position: absolut;**/
     order: 2;
@@ -140,8 +140,25 @@ h1 {
     transition: transform 400ms ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
+/**}**/
+.card .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99e2d0;
+    color: white;
+    font-size: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out; /* Animation douce pour le glissement */
+    z-index: 2;
 }
-
 .card:hover .check {
     transform: translateX(0);
     /* Fait glisser la coche dans l'écran au survol */
@@ -166,7 +183,7 @@ h3 {
     padding-bottom: 4px;
 }
 
-.card {
+/**.card {
     display: flex;
     position: relative;
     margin-bottom: 10px;
@@ -177,8 +194,21 @@ h3 {
     box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
     align-items: center;
     justify-content: space-between;
+}**/
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 72px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.4s ease-out; /* Transition douce pour le glissement */
 }
-
 
 .name {
     /**padding: 13px;**/
@@ -220,7 +250,7 @@ h3 {
     order: 1;
 }
 
-.prix p {
+/**.prix p {
     margin-right: -100px;
     margin-top: 39px;
     font-family: Roboto, sans-serif;
@@ -232,8 +262,14 @@ h3 {
     /* flex-shrink: 0; Empêche le prix de se réduire */
     /** font-weight: 700;**/
     /**line-height: 17.63px;**/
+/**}**/
+.prix {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    transition: margin-left 0.4s ease-out; /* Transition douce pour le déplacement du prix */
 }
-
 /**footer**/
 footer {
     display: flex;

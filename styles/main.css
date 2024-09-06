@@ -1,3 +1,10 @@
+@charset "UTF-8";
+.btn_container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  margin-top: 15px; /* Éventuellement ajuster pour la mise en page */
+}
+
 .btn {
   justify-content: center;
   display: flex;
