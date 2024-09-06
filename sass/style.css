@@ -348,6 +348,7 @@ restaurant .card_titles .empty {
   position: absolute;
   width: 22px;
   height: 21px;
+  font-size: 22px;
   top: 25%;
   left: 80%;
   right: 10%;
@@ -356,10 +357,14 @@ restaurant .card_titles .empty {
   display: none;
   color: #ff79da;
   transition: color 0.3s;
+  width: 22px;
+  height: 21px;
 }
 .heart .empty {
   color: black;
   transition: color 0.3s;
+  width: 22px;
+  height: 21px;
 }
 .heart:hover .empty {
   display: none;
