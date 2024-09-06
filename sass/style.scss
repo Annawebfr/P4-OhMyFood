@@ -371,7 +371,6 @@ restaurant .card_titles .empty {
 
 
 /**heart**/
-
 .heart {
     position: absolute;
     width: 22px;
@@ -380,16 +379,29 @@ restaurant .card_titles .empty {
     left: 80%;
     right: 10%;
     
-    .fa-heart {
-      color: black; // Couleur par défaut
-      transition: color 0.3s; // Animation douce lors du changement de couleur
+    .full {
+      display: none; // Cache le cœur plein par défaut
+      color: #ff79da; // Couleur du cœur plein
+      transition: color 0.3s; // Animation douce pour le changement de couleur
+    }
+    
+    .empty {
+      color: black; // Couleur du cœur vide
+      transition: color 0.3s; // Animation douce pour le changement de couleur
+    }
+  
+    &:hover {
+      .empty {
+        display: none; // Cache le cœur vide au survol
+      }
       
-      &:hover {
-        color: pink; // Couleur au survol
+      .full {
+        display: inline; // Affiche le cœur plein au survol
       }
     }
   }
-
+  
+  
 
 /**fadein**/
 .card_menuentrees,

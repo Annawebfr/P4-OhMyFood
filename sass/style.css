@@ -352,12 +352,20 @@ restaurant .card_titles .empty {
   left: 80%;
   right: 10%;
 }
-.heart .fa-heart {
+.heart .full {
+  display: none;
+  color: #ff79da;
+  transition: color 0.3s;
+}
+.heart .empty {
   color: black;
   transition: color 0.3s;
 }
-.heart .fa-heart:hover {
-  color: pink;
+.heart:hover .empty {
+  display: none;
+}
+.heart:hover .full {
+  display: inline;
 }
 
 /**fadein**/
