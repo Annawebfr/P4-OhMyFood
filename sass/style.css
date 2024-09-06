@@ -9,15 +9,6 @@
 /**$primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiaire-color: #99E2D0;**/
-/**h1,h2 {
-    font-family: "Roboto-bold";
-    /** margin: /
-    font-weight: 700;
-    color: #000;0;/**
-}
-
-
-
 /**Loader**/
 .loading {
   background-color: #FF79DA;
@@ -28,7 +19,7 @@ $tertiaire-color: #99E2D0;**/
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: animation_opacity 10s forwards;
+  animation: animation_opacity 2s forwards;
   animation-duration: 10s;
   /** animation-name: animation_opacity;
   animation-fill-mode: forwards;
@@ -46,7 +37,7 @@ $tertiaire-color: #99E2D0;**/
   top: 35%;
   left: 35%;
   /**  animation: animation_loader 2s linear;**/
-  animation: animation_loader 10s linear infinite;
+  animation: animation_loader 2s linear infinite;
 }
 
 @keyframes animation_loader {
@@ -354,51 +345,19 @@ restaurant .card_titles .empty {
 
 /**heart**/
 .heart {
-  cursor: pointer;
-  z-index: 99;
-  /** pointer-events: none;**/
-}
-
-.fa-heart {
   position: absolute;
-}
-
-.fa-heart.empty {
-  color: black;
   width: 22px;
   height: 21px;
   top: 25%;
   left: 80%;
-  position: absolute;
-  top: 30%;
   right: 10%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  cursor: pointer;
 }
-
-.fa-heart.full {
-  position: absolute;
-  width: 22px;
-  height: 21px;
-  /**top: 63%;
-  right: 25%;**/
-  left: 80%;
-  top: 30%;
-  color: transparent;
-  font-size: 25px;
-  background-image: linear-gradient(10deg, #ff79da, #9356DC);
-  -webkit-background-clip: text;
-  background-clip: text;
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-50%);
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+.heart .fa-heart {
+  color: black;
+  transition: color 0.3s;
 }
-
-.heart:active .fa-heart.full {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+.heart .fa-heart:hover {
+  color: pink;
 }
 
 /**fadein**/
