@@ -105,7 +105,7 @@ h1 {
 .card_menuplat,
 .card_menudesserts {
     animation: fadein 3s ease-in;
-    /**animation-duration: 2,4,6s;**/
+    animation-duration: 2s;
 }
 
 @keyframes fadein {
