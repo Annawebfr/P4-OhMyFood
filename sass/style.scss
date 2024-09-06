@@ -28,9 +28,9 @@ $tertiaire-color: #99E2D0;**/
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: animation_opacity 2s forwards;
+    animation: animation_opacity 10s forwards;
+    animation-duration: 10s;
     /** animation-name: animation_opacity;
-    animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;**/
 
@@ -47,7 +47,7 @@ $tertiaire-color: #99E2D0;**/
     top: 35%;
     left: 35%;
     /**  animation: animation_loader 2s linear;**/
-    animation: animation_loader 2s linear infinite;
+    animation: animation_loader 10s linear infinite;
 }
 
 

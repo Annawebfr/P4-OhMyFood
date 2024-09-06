@@ -152,8 +152,8 @@ h1 {
 
 .card .check {
     display: flex;
-   /** position: absolut;**/
-   order: 2;
+    /** position: absolut;**/
+    order: 2;
     background-color: #99e2d0;
     color: white;
     align-items: center;
@@ -165,15 +165,18 @@ h1 {
     height: 100%;
     right: 0;
     top: 0;
-   /** margin-right: -100px;**/
-   margin-left: auto;
-    transform: translateX(130%);   /* La coche est initialement hors de l'écran à droite */
-    transition: transform 400ms ease-out;  /* Animation douce pour le glissement */
+    /** margin-right: -100px;**/
+    margin-left: auto;
+    transform: translateX(130%);
+    /* La coche est initialement hors de l'écran à droite */
+    transition: transform 400ms ease-out;
+    /* Animation douce pour le glissement */
     z-index: 2;
 }
 
 .card:hover .check {
-    transform: translateX(0);   /* Fait glisser la coche dans l'écran au survol */
+    transform: translateX(0);
+    /* Fait glisser la coche dans l'écran au survol */
 }
 
 .check i {
@@ -220,7 +223,6 @@ h3 {
     min-width: 0;
 }
 
-
 .card h4 {
     /**display: block;**/
     margin-bottom: 7px;
@@ -237,9 +239,8 @@ h3 {
     text-align: left;
 }
 
-
 .card p {
-   margin: 0px;
+    margin: 0px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -258,8 +259,9 @@ h3 {
     font-weight: bold;
     font-size: 15px;
     text-align: center;
-    transition: margin-left 400ms ease-out; /* Ajoute une transition pour le déplacement du prix */
- /* flex-shrink: 0; Empêche le prix de se réduire */
+    transition: margin-left 400ms ease-out;
+    /* Ajoute une transition pour le déplacement du prix */
+    /* flex-shrink: 0; Empêche le prix de se réduire */
     /** font-weight: 700;**/
     /**line-height: 17.63px;**/
 }

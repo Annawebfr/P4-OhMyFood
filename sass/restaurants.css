@@ -159,13 +159,16 @@ h1 {
   top: 0;
   /** margin-right: -100px;**/
   margin-left: auto;
-  transform: translateX(130%); /* La coche est initialement hors de l'écran à droite */
-  transition: transform 400ms ease-out; /* Animation douce pour le glissement */
+  transform: translateX(130%);
+  /* La coche est initialement hors de l'écran à droite */
+  transition: transform 400ms ease-out;
+  /* Animation douce pour le glissement */
   z-index: 2;
 }
 
 .card:hover .check {
-  transform: translateX(0); /* Fait glisser la coche dans l'écran au survol */
+  transform: translateX(0);
+  /* Fait glisser la coche dans l'écran au survol */
 }
 
 .check i {
@@ -247,7 +250,8 @@ h3 {
   font-weight: bold;
   font-size: 15px;
   text-align: center;
-  transition: margin-left 400ms ease-out; /* Ajoute une transition pour le déplacement du prix */
+  transition: margin-left 400ms ease-out;
+  /* Ajoute une transition pour le déplacement du prix */
   /* flex-shrink: 0; Empêche le prix de se réduire */
   /** font-weight: 700;**/
   /**line-height: 17.63px;**/
