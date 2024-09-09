@@ -55,7 +55,7 @@ h1 {
   font-family: Shrikhand;
   font-weight: 400;
   font-size: 28px;
-  font-style: italic;
+  /**font-style: italic;**/
   line-height: 41px;
   margin-right: 10px;
 }
@@ -136,18 +136,21 @@ h1 {
   /* Ajustez la taille de l'icône de la coche */
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
 .content_title {
   margin-top: 25px;
   border-bottom: solid;
   width: 41px;
   border-color: #99E2D0;
   margin-bottom: 10px;
-}
-
-h3 {
+  font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 4px;
+  line-height: 18.75px;
 }
 
 .card {
@@ -180,7 +183,7 @@ h3 {
 .card h4 {
   /**display: block;**/
   margin-bottom: 7px;
-  margin-top: 0px;
+  margin-top: -10px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -198,20 +201,23 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 15px;
-  font-weight: 300;
   text-align: left;
   /**line-height: 17.63px;**/
 }
 
 .prix p {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   font-weight: bold;
   font-size: 15px;
+  font-weight: 700;
   text-align: center;
+  /**line-height: 17px;**/
   transition: margin-left 0.4s ease-out;
   /* Transition douce pour le déplacement du prix */
+  margin-top: 35px;
+  margin-right: 20px;
 }
 
 /**footer**/
