@@ -184,12 +184,12 @@ h3 {
   /**display: block;**/
   margin-bottom: 7px;
   margin-top: -10px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  /** white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;**/
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  color: #353535;
+  color: #000000;
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
@@ -198,17 +198,17 @@ h3 {
 
 .card p {
   margin: 0px;
-  white-space: nowrap;
+  /**white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;**/
   font-family: Roboto, sans-serif;
   font-size: 15px;
   text-align: left;
-  /**line-height: 17.63px;**/
+  color: #000000;
 }
 
 .prix p {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 15px;
   font-weight: 700;

@@ -152,6 +152,7 @@ h3 {
     font-weight: 300;
     padding-bottom: 4px;
 }
+
 .content_title {
     margin-top: 25px;
     border-bottom: solid;
@@ -193,13 +194,13 @@ h3 {
 .card h4 {
     /**display: block;**/
     margin-bottom: 7px;
-  margin-top: -10px;
-    white-space: nowrap;
+    margin-top: -10px;
+    /** white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: hidden;**/
     font-family: Roboto, sans-serif;
-   font-weight: bold;
-    color: #353535;
+    font-weight: bold;
+    color: #000000;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -209,17 +210,18 @@ h3 {
 
 .card p {
     margin: 0px;
-    white-space: nowrap;
+    /**white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;**/
     font-family: Roboto, sans-serif;
     font-size: 15px;
     text-align: left;
-    /**line-height: 17.63px;**/
+    color: #000000
+        /**line-height: 17.63px;**/
 }
 
 .prix p {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 15px;
     font-weight: 700;
@@ -288,6 +290,86 @@ footer {
         text-decoration: none;
     }
 }
+
+
+
+
+
+@media (min-width: 768px) {
+    .menu {
+       /** top: 490px;
+        gap: 40px;**/
+        margin: 40px;
+    }
+
+    .fonction {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .fonction_titre {
+        width: 200px;
+        /* Ajustez la largeur si nécessaire */
+        margin-right: 20px;
+        /* Espacement entre le titre et les boutons */
+    }
+
+    .fonction_btn {
+        flex: 1;
+        /* Pour prendre tout l'espace restant */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fonction_content {
+        width: 100%;
+        /* Ajustez la largeur des boutons pour les aligner */
+    }
+
+    /**.restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    /** gap: 20px;**/
+    /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
+    /**}**/
+
+    **/ .restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permet aux éléments de s’enrouler en lignes */
+        gap: 20px;
+        /* Espacement uniforme entre les éléments */
+    }
+
+    .restaurant_cards {
+        flex: 1 1 calc(50% - 20px);
+        /* Chaque carte prend 50% de la largeur moins l'espacement */
+        max-width: calc(50% - 20px);
+        /* Limite la largeur maximale pour garder les colonnes égales */
+        box-sizing: border-box;
+        /* Assure l'inclusion du padding dans la taille totale */
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: #FFFFFF;
+        list-style: none;
+        gap: 85px;
+    }
+}
+
+
+
+
+
 
 /**@media only screen and (min-width: 1024px) {
     header {
