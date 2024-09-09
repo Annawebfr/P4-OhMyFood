@@ -42,7 +42,6 @@ $tertiaire-color: #99E2D0;**/
     animation: animation_loader 2s linear infinite;
 }
 
-
 @keyframes animation_loader {
     0% {
         transform: rotate(0deg);
@@ -156,7 +155,6 @@ a {
     font-size: 24px;
     font-weight: 700;
     line-height: 28.13px;
-    font-size: 25px;
     align-items: center;
 }
 
@@ -229,8 +227,8 @@ a {
 
 /** restaurant **/
 .restaurant {
-    /**grid-column: 2 / 3;
-     grid-row: 2 / 3;
+    /** grid-column: 2 / 3;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -238,7 +236,6 @@ a {
     display: flex;
     flex-flow: column;
     width: 100%;
-
     gap: 26px;
     margin-top: 50px;
     padding-bottom: 66px;
@@ -486,8 +483,6 @@ a {
 }
 
 
-
-
 @media (min-width: 768px) {
     .fonction {
         flex-direction: row;
@@ -514,22 +509,41 @@ a {
         /* Ajustez la largeur des boutons pour les aligner */
     }
 
-    .restaurant {
-        display: flex;
+    /**.restaurant {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    /** gap: 20px;**/
+    /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
+}
 
-    }
+**/ .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet aux éléments de s’enrouler en lignes */
+    gap: 20px;
+    /* Espacement uniforme entre les éléments */
+}
 
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+.restaurant_cards {
+    flex: 1 1 calc(50% - 20px);
+    /* Chaque carte prend 50% de la largeur moins l'espacement */
+    max-width: calc(50% - 20px);
+    /* Limite la largeur maximale pour garder les colonnes égales */
+    box-sizing: border-box;
+    /* Assure l'inclusion du padding dans la taille totale */
+}
 
-    .footer_links {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        color: #FFFFFF;
-        list-style: none;
-        gap: 85px;
-    }
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #FFFFFF;
+    list-style: none;
+    gap: 85px;
+}
 }
