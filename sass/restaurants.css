@@ -54,6 +54,7 @@ header .fa-arrow-left {
   padding: 12px;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+  z-index: 1;
 }
 
 h1 {
@@ -71,8 +72,8 @@ h1 {
   width: 22px;
   height: 21px;
   font-size: 22px;
-  top: 30px;
-  right: 35px;
+  top: 25%;
+  left: 85%;
   right: 10%;
 }
 .heart .full {
@@ -189,9 +190,9 @@ h3 {
   /**display: block;**/
   margin-bottom: 7px;
   margin-top: -10px;
-  /** white-space: nowrap;
+  white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;**/
+  overflow: hidden;
   font-family: Roboto, sans-serif;
   font-weight: bold;
   color: #000000;
@@ -218,9 +219,9 @@ h3 {
   font-weight: 700;
   text-align: center;
   /**line-height: 17px;**/
-  transition: margin-left 0.4s ease-out;
-  /* Transition douce pour le déplacement du prix */
-  margin-top: 35px;
+  /* transition: margin-left 0.4s ease-out;
+    Transition douce pour le déplacement du prix */
+  margin-top: 31px;
   margin-right: 12px;
 }
 
