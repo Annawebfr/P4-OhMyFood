@@ -8,7 +8,7 @@
 header {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 15px;
 
     .logo {
         position: relative;
@@ -16,7 +16,6 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /** box-shadow: 0px 2px 4px 0px rgba(0, 0, 38, 0.15);**/
         width: 100%;
 
         .img {
@@ -27,17 +26,24 @@ header {
     }
 
     .fa-arrow-left {
-        /** position: absolute;**/
-        left: 6px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 17px;
+        left: 17px;
         font-size: 24px;
-        top: 34px;
         color: black;
     }
 }
 
+/**main**/
 .head_img {
-    height: 360px;
-    width: 100%;
+    width: 375px;
+    height: 275px;
+    top: 63px;
+
+    gap: 0px;/
+    opacity: 0px;
     -o-object-fit: cover;
     object-fit: cover;
     /** margin-top: 20px;**/
@@ -47,7 +53,7 @@ header {
 /**section menu**/
 .menu {
     position: relative;
-    margin-top: -90px;
+    margin-top: -70px;
     background-color: #f6f6f6;
     padding: 20px;
     border-top-right-radius: 40px;
@@ -202,7 +208,6 @@ h3 {
     font-weight: bold;
     color: #000000;
     font-size: 18px;
-    font-weight: 500;
     line-height: 21px;
     text-align: left;
 
