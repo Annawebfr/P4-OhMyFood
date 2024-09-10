@@ -145,7 +145,6 @@ a {
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
-  font-size: 25px;
   align-items: center;
 }
 
@@ -210,8 +209,8 @@ a {
 
 /** restaurant **/
 .restaurant {
-  /**grid-column: 2 / 3;
-   grid-row: 2 / 3;
+  /** grid-column: 2 / 3;
+  grid-row: 2 / 3;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -395,9 +394,8 @@ restaurant .card_titles .empty {
 footer {
   display: flex;
   flex-flow: column;
-  gap: 16px;
-  /**  padding: 25px 22px 22px 25px;**/
-  padding: 25px;
+  /** gap: 16px;**/
+  padding: 25px 22px 22px 25px;
   background: #353535;
 }
 
@@ -414,7 +412,7 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   color: #FFFFFF;
-  /**gap: 10px;**/
+  gap: 10px;
   list-style: none;
 }
 
@@ -471,11 +469,26 @@ a {
     width: 100%;
     /* Ajustez la largeur des boutons pour les aligner */
   }
+  /**.restaurant {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2 colonnes */
+  /** gap: 20px;**/
+  /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
+  /**}**/
   .restaurant {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colonnes */
-    /** gap: 20px;**/
-    grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet aux éléments de s’enrouler en lignes */
+    gap: 20px;
+    /* Espacement uniforme entre les éléments */
+  }
+  .restaurant_cards {
+    flex: 1 1 calc(50% - 20px);
+    /* Chaque carte prend 50% de la largeur moins l'espacement */
+    max-width: calc(50% - 20px);
+    /* Limite la largeur maximale pour garder les colonnes égales */
+    box-sizing: border-box;
+    /* Assure l'inclusion du padding dans la taille totale */
   }
   footer {
     display: flex;
