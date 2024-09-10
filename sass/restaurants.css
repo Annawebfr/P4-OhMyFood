@@ -36,7 +36,7 @@ header .fa-arrow-left {
 
 /**main**/
 .head_img {
-  width: 375px;
+  width: 100%;
   height: 275px;
   top: 63px;
   gap: 0px;
@@ -280,54 +280,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .menu {
-    /** gap: 40px;**/
-    top: 490px;
-    margin: 40px;
-    padding: 40px;
-  }
-  .fonction {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .fonction_titre {
-    width: 200px;
-    /* Ajustez la largeur si nécessaire */
-    margin-right: 20px;
-    /* Espacement entre le titre et les boutons */
-  }
-  .fonction_btn {
-    flex: 1;
-    /* Pour prendre tout l'espace restant */
-    display: flex;
-    justify-content: space-between;
-  }
-  .fonction_content {
-    width: 100%;
-    /* Ajustez la largeur des boutons pour les aligner */
-  }
-  /**.restaurant {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* 2 colonnes */
-  /** gap: 20px;**/
-  /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
-  /**}**/
-  .restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    /* Permet aux éléments de s’enrouler en lignes */
-    gap: 20px;
-    /* Espacement uniforme entre les éléments */
-  }
-  .restaurant_cards {
-    flex: 1 1 calc(50% - 20px);
-    /* Chaque carte prend 50% de la largeur moins l'espacement */
-    max-width: calc(50% - 20px);
-    /* Limite la largeur maximale pour garder les colonnes égales */
-    box-sizing: border-box;
-    /* Assure l'inclusion du padding dans la taille totale */
-  }
   footer {
     display: flex;
     flex-direction: row-reverse;
@@ -340,41 +292,4 @@ a {
     list-style: none;
     gap: 85px;
   }
-}
-/**@media only screen and (min-width: 1024px) {
-    header {
-        padding: 20px 40px;
-
-        .fa-arrow-left {
-            font-size: 32px;
-        }
-
-        .logo img {
-            width: 180px;
-        }
-    }
-
-    .menu {
-        padding: 30px;
-    }
-
-    .card {
-        padding: 25px;
-    }
-
-    footer {
-        padding: 40px;
-
-        .footer_logo {
-            width: 200px;
-        }
-
-        .footer_links {
-            gap: 20px;
-
-            a {
-                font-size: 18px;
-            }
-        }
-    }
-}**//*# sourceMappingURL=restaurants.css.map */
+}/*# sourceMappingURL=restaurants.css.map */

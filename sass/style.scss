@@ -512,6 +512,23 @@ a {
 
 
 
-/**@media (min-width: 768px) {
-  
-}**/
+@media (min-width: 768px) {
+
+    .restaurant {
+        display: flex;
+        flex-flow: row;
+    }
+   footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: #FFFFFF;
+        list-style: none;
+        gap: 85px;
+    } 
+}
