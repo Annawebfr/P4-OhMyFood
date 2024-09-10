@@ -62,7 +62,15 @@ $tertiaire-color: #99E2D0;**/
   position: relative;
 }
 
-/** header logo**/
+/** header et logo**/
+header {
+  width: 375px;
+  height: 113px;
+  padding: 0px 0px 0.5px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
 .logo {
   /**position: relative;**/
   display: flex;
@@ -121,26 +129,20 @@ h1 {
 }
 
 .reservation p {
+  width: 315px;
+  height: 46px;
+  margin-top: 17px;
   font-family: "roboto", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  /** line-height: 21px;**/
-  /**  color: #000;**/
-  margin-top: 17px;
+  line-height: 21px;
   text-align: center;
   color: #353535;
 }
 
-.reservation .btn {
-  margin-top: 27px;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
 .titre_reserver {
+  width: 275px;
+  /**height: 68px;**/
   font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
@@ -153,18 +155,33 @@ a {
   align-items: center;
 }
 
+.reservation .btn {
+  margin-top: 27px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 /*fonctionement*/
 .fonction {
   display: flex;
   flex-direction: column;
-  /** margin: 20px 20px 50px;**/
-  margin-left: 25px;
+  /**  width: 375px;**/
+  /** height: 440px;**/
+  margin: 20px 20px 50px;
+  gap: 0px;
+  opacity: 0px;
+  /**margin-left: 25px;**/
 }
 .fonction_btn {
   display: flex;
   flex-wrap: wrap;
+  width: 335px;
   font-family: roboto, sans-serif;
   font-size: 16px;
+  left: 20px;
 }
 .fonction_number {
   background-color: #9747ff;
@@ -184,8 +201,8 @@ a {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   height: 70px;
-  margin: 10px;
-  width: 90%;
+  margin: 12px;
+  width: 100%;
   cursor: pointer;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -196,12 +213,15 @@ a {
   margin: 20px;
 }
 .fonction_titre {
-  margin-bottom: 30px;
-  margin-top: 40px;
+  width: 275px;
+  height: 31px;
+  margin-bottom: 20px;
+  margin-top: 25px;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  text-align: left;
+  left: 20px;
+  /**text-align: left;**/
 }
 .fonction_texte {
   margin: 10px;
@@ -227,20 +247,22 @@ a {
 }
 
 .titre_restaurants {
-  /** margin-left: 15px;**/
+  width: 275px;
+  /**height: 68px;**/
   margin-top: 50px;
+  left: 20px;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
   /**text-align: left;**/
+  /** margin-left: 15px;**/
 }
 
 .restaurant_cards {
+  width: 340px;
   background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  /**  padding-bottom: 20px;**/
-  /** width: 90%;**/
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -249,8 +271,14 @@ a {
 }
 
 .restaurant_cards img {
-  width: 100%;
+  width: 346px;
   height: 190px;
+  top: -57px;
+  left: -3px;
+  gap: 0px;
+  opacity: 0px;
+  /**width: 100%;
+  height: 190px;**/
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 15px;
@@ -400,11 +428,11 @@ footer {
 }
 
 .footer_logo {
-  width: 139px;
+  width: 109px;
   height: 27px;
   filter: invert(1);
-  /**  padding: 20px 0;**/
   color: #FFFFFF;
+  /**  padding: 20px 0;**/
 }
 
 .footer_links {
@@ -428,7 +456,7 @@ footer {
 }
 
 .footer_links_simple {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.75px;
