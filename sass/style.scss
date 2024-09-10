@@ -427,8 +427,7 @@ footer {
     display: flex;
     flex-flow: column;
     gap: 16px;
-    /**  padding: 25px 22px 22px 25px;**/
-    padding: 25px;
+    padding: 25px 22px 22px 25px;
     background: #353535;
 }
 
@@ -514,36 +513,36 @@ a {
         grid-template-columns: 1fr 1fr; /* 2 colonnes */
     /** gap: 20px;**/
     /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
-/**}**/
+    /**}**/
 
-**/ .restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    /* Permet aux éléments de s’enrouler en lignes */
-    gap: 20px;
-    /* Espacement uniforme entre les éléments */
-}
+    **/ .restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        /* Permet aux éléments de s’enrouler en lignes */
+        gap: 20px;
+        /* Espacement uniforme entre les éléments */
+    }
 
-.restaurant_cards {
-    flex: 1 1 calc(50% - 20px);
-    /* Chaque carte prend 50% de la largeur moins l'espacement */
-    max-width: calc(50% - 20px);
-    /* Limite la largeur maximale pour garder les colonnes égales */
-    box-sizing: border-box;
-    /* Assure l'inclusion du padding dans la taille totale */
-}
+    .restaurant_cards {
+        flex: 1 1 calc(50% - 20px);
+        /* Chaque carte prend 50% de la largeur moins l'espacement */
+        max-width: calc(50% - 20px);
+        /* Limite la largeur maximale pour garder les colonnes égales */
+        box-sizing: border-box;
+        /* Assure l'inclusion du padding dans la taille totale */
+    }
 
-footer {
-    display: flex;
-    flex-direction: row-reverse;
-}
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
-.footer_links {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    color: #FFFFFF;
-    list-style: none;
-    gap: 85px;
-}
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: #FFFFFF;
+        list-style: none;
+        gap: 85px;
+    }
 }
