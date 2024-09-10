@@ -240,55 +240,54 @@ footer {
     gap: 16px;
     padding: 25px 22px 22px 25px;
     background: #353535;
-    
-    .footer_logo {
-        width: 139px;
-        height: 27px;
-        padding: 20px 0;
-        filter: invert(1);
-        color: #FFFFFF;
-    }
-
-    .footer_links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        color: #ffffff;
-      /**gap: 10px;**/
-        list-style: none;
-    }
-   
-
-    .footer_links_bold {
-        display: flex;
-        justify-content: flex-start;
-        gap: 12px;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 18.75px;
-        /**text-align: left;**/
-    }
-
-    .footer_links_simple {
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 18.75px;
-        text-align: left;
-        color: #FFFFFF;
-    }
-
-    .footer_links_bold .fa-solid {
-        width: 16px;
-        color: #FFFFFF
-    }
-
-    a {
-        color: #FFFFFF;
-        text-decoration: none;
-    }
 }
+
+.footer_logo {
+    width: 139px;
+    height: 27px;
+    filter: invert(1);
+    /** padding: 20px 0;**/
+    color: #FFFFFF;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer_links_bold {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    /**text-align: left;**/
+}
+
+.footer_links_simple {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.footer_links_bold .fa-solid {
+    width: 16px;
+    color: #FFFFFF
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 
 
 
@@ -296,7 +295,7 @@ footer {
 
 @media (min-width: 768px) {
     .menu {
-       /** gap: 40px;**/
+        /** gap: 40px;**/
         top: 490px;
         margin: 40px;
         padding: 40px;
@@ -334,7 +333,7 @@ footer {
     /** grid-auto-flow: dense; /* Compacte les éléments pour éviter les trous */
     /**}**/
 
- .restaurant {
+    .restaurant {
         display: flex;
         flex-wrap: wrap;
         /* Permet aux éléments de s’enrouler en lignes */
