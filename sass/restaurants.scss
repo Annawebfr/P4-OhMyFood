@@ -41,8 +41,7 @@ header {
     width: 375px;
     height: 275px;
     top: 63px;
-
-    gap: 0px;/
+    gap: 0px;
     opacity: 0px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -55,7 +54,7 @@ header {
     position: relative;
     margin-top: -70px;
     background-color: #f6f6f6;
-    padding: 20px;
+    padding: 12px;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
 }
@@ -215,9 +214,9 @@ h3 {
 
 .card p {
     margin: 0px;
-    /**white-space: nowrap;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;**/
+    text-overflow: ellipsis;
     font-family: Roboto, sans-serif;
     font-size: 15px;
     text-align: left;
@@ -235,7 +234,7 @@ h3 {
     transition: margin-left 0.4s ease-out;
     /* Transition douce pour le déplacement du prix */
     margin-top: 35px;
-    margin-right: 20px;
+    margin-right: 12px;
 }
 
 /**footer**/
