@@ -19,7 +19,7 @@ $tertiaire-color: #99E2D0;**/
   justify-content: center;
   align-items: center;
   animation: animation_opacity 2s forwards;
-  animation-duration: 3s;
+  animation-duration: 5s;
   /** animation-name: animation_opacity;
   animation-fill-mode: forwards;
   animation-timing-function: linear;**/

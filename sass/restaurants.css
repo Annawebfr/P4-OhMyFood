@@ -10,6 +10,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px;
+  position: relative;
 }
 header .logo {
   position: relative;
@@ -17,7 +18,6 @@ header .logo {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 header .logo .img {
   width: 162px;
@@ -32,6 +32,7 @@ header .fa-arrow-left {
   left: 17px;
   font-size: 24px;
   color: black;
+  cursor: pointer;
 }
 
 /**main**/
@@ -97,11 +98,51 @@ h1 {
 }
 
 /**fadein**/
-.card_menuentrees,
+/**.card_menuentrees,
 .card_menuplat,
 .card_menudesserts {
+    animation: fadein 3s ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}**/
+.card_menuentrees {
   animation: fadein 3s ease-in;
   animation-duration: 2s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card_menuplat {
+  animation: fadein 3s ease-in;
+  animation-duration: 6s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card_menudesserts {
+  animation: fadein 3s ease-in;
+  animation-duration: 8s;
 }
 
 @keyframes fadein {
