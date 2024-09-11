@@ -154,7 +154,15 @@ h1 {
 }
 
 
-
+.slide_check {
+    display: flex;
+  /**  position: absolute;
+    right: 0;
+    top: 0;**/
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 .card .check {
     display: flex;
     align-items: center;
@@ -173,16 +181,11 @@ h1 {
     transition: transform 0.4s ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
-
-    /**justify-content: space-between;**/
-    /**padding: 0 10px; /* Ajout d'un peu d'espace autour du contenu */
 }
-
 .card:hover .check {
     transform: translateX(0);
     /* Fait glisser la coche dans l'écran au survol */
 }
-
 .check i {
     font-size: 16px;
     /* Ajustez la taille de l'icône de la coche */
@@ -194,12 +197,29 @@ h1 {
     font-size: 15px;
     font-weight: 700;
     text-align: center;
-    /**line-height: 17px;**/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 17px;
+    color: #000000;
    /* transition: margin-left 0.4s ease-out;
      Transition douce pour le déplacement du prix */
     margin-top: 31px;
     margin-right: 12px;
 }
+
+/** je peux le supprimer car il est en double avec prix p je crois**/
+/**.card p {
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #000000
+    line-height: 17.63px;
+}**/
 
 h3 {
     font-size: 16px;
@@ -263,17 +283,7 @@ h3 {
 
 }
 
-.card p {
-    margin: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    text-align: left;
-    color: #000000
-        /**line-height: 17.63px;**/
-}
+
 
 
 
