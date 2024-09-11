@@ -4,6 +4,17 @@
 $secondary-color: #FF79DA;
 $tertiaire-color: #99E2D0;**/
 
+/**exemple
+body {
+    background-color: $primary-color;
+  }
+  
+  .button {
+    background-color: $secondary-color;
+    border-color: $tertiaire-color;
+  }**/
+  
+
 * {
     margin: 0;
     padding: 0;
@@ -22,9 +33,10 @@ $tertiaire-color: #99E2D0;**/
     align-items: center;
     animation: animation_opacity 2s forwards;
     animation-duration: 5s;
-    /** animation-name: animation_opacity;
+/** demander mon mentor si j'ai besion de cela**/
+     animation-name: animation_opacity;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;**/
+    animation-timing-function: linear;
 
 }
 

@@ -107,23 +107,6 @@ h1 {
     }
 }
 
-/**fadein**/
-/**.card_menuentrees,
-.card_menuplat,
-.card_menudesserts {
-    animation: fadein 3s ease-in;
-    animation-duration: 2s;
-}
-
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}**/
 
 .card_menuentrees {
     animation: fadein 3s ease-in;
@@ -190,6 +173,9 @@ h1 {
     transition: transform 0.4s ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
+
+    /**justify-content: space-between;**/
+    /**padding: 0 10px; /* Ajout d'un peu d'espace autour du contenu */
 }
 
 .card:hover .check {
@@ -200,6 +186,19 @@ h1 {
 .check i {
     font-size: 16px;
     /* Ajustez la taille de l'icône de la coche */
+}
+
+.prix p {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    /**line-height: 17px;**/
+   /* transition: margin-left 0.4s ease-out;
+     Transition douce pour le déplacement du prix */
+    margin-top: 31px;
+    margin-right: 12px;
 }
 
 h3 {
@@ -276,18 +275,7 @@ h3 {
         /**line-height: 17.63px;**/
 }
 
-.prix p {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    /**line-height: 17px;**/
-   /* transition: margin-left 0.4s ease-out;
-     Transition douce pour le déplacement du prix */
-    margin-top: 31px;
-    margin-right: 12px;
-}
+
 
 
 
