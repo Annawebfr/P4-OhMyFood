@@ -148,6 +148,8 @@ h1 {
     line-height: 21px;
     text-align: center;
     color: #353535;
+    font-size: 18px;
+    align-items: center;
 }
 
 .titre_reserver {
@@ -158,12 +160,23 @@ h1 {
     font-weight: 700;
     line-height: 28.13px;
     align-items: center;
+    top: 152px;
+    left:42px;
 }
 
-.sub_titre_decouvrez {
+/**.sub_titre_decouvrez {
+    width: 315px;
+    height: 46px;
+    margin-top: 17px;
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-align: center;
+    color: #353535;
     font-size: 18px;
     align-items: center;
-}
+}**/
 
 .reservation .btn {
     margin-top: 27px;
