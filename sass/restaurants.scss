@@ -51,6 +51,11 @@ header {
 
 
 /**section menu**/
+
+/**main {
+    height:1080px;
+}**/
+
 .menu {
     position: relative;
     margin-top: -70px;
@@ -254,40 +259,41 @@ h3 {
     line-height: 17px;
     color: #000000;
     margin-top: 31px;
-    /** margin-right: 12px;**/
     transition: margin-left 0.4s ease-out;
     /* Transition douce pour le déplacement du prix */
+    transform: translateX(0); /* Commence à la position normale */
 }
 
 .card .check {
     display: flex;
-    /**position: absolute;**/
     width: 80px;
     height: 100%;
     align-items: center;
     justify-content: center;
-    /**right: 0;**/
-    /**top: 0;**/
+   /** right: 0;
+    top: 0;**/
     background-color: #99e2d0;
     color: white;
     font-size: 24px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    transform: translateX(100%);
+    transform: translateX(100%);/* Positionne la check box hors de l'écran à droite */
     transition: transform 0.4s ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
 }
-
 .card:hover .check {
     transform: translateX(0);
-    /* Fait glisser la coche dans l'écran au survol */
+    /* La coche glisse à gauche dans l'écran */
 }
-
 .check i {
     font-size: 16px;
     /* Ajustez la taille de l'icône de la coche */
 }
+.card:hover .prix p {
+    transform: translateX(-80px); /* Déplace le prix vers la gauche de la largeur de la check box */
+}
+
 
 /**footer**/
 footer {
