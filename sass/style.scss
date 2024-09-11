@@ -511,7 +511,10 @@ a {
         display: flex;
         flex-direction: row;
     }
-
+    .fonction_titre {
+        order: -1;
+      }
+      
     .restaurant {
         display: flex;
         flex-direction: row;
