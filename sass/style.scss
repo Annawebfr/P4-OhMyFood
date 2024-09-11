@@ -13,7 +13,7 @@ body {
     background-color: $secondary-color;
     border-color: $tertiaire-color;
   }**/
-  
+
 
 * {
     margin: 0;
@@ -33,8 +33,8 @@ body {
     align-items: center;
     animation: animation_opacity 2s forwards;
     animation-duration: 5s;
-/** demander mon mentor si j'ai besion de cela**/
-     animation-name: animation_opacity;
+    /** demander mon mentor si j'ai besion de cela**/
+    animation-name: animation_opacity;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 
@@ -197,6 +197,7 @@ a {
     opacity: 0px;
     /**margin-left: 25px;**/
     top: 400px;
+
 
 
     &_btn {
