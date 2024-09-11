@@ -109,11 +109,10 @@ h1 {
 
 card_container {
     /**width: Hug (375px)px;
-height: Hug (1,275px)px;**/
+    height: Hug (1,275px)px;**/
     top: 315px;
     gap: 40px;
     opacity: 0px;
-
 }
 
 .card_menuentrees {
@@ -189,7 +188,9 @@ h3 {
     border-radius: 20px;
     background-color: #ffffff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     transition: transform 0.4s ease-out;
     /* Transition douce pour le glissement */
 }
@@ -241,6 +242,7 @@ h3 {
 }**/
 
 .prix p {
+    display: flex;
     font-family: Roboto, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -252,20 +254,20 @@ h3 {
     line-height: 17px;
     color: #000000;
     margin-top: 31px;
-    margin-right: 12px;
-     transition: margin-left 0.4s ease-out;
+    /** margin-right: 12px;**/
+    transition: margin-left 0.4s ease-out;
     /* Transition douce pour le déplacement du prix */
 }
 
 .card .check {
     display: flex;
-    position: absolute;
+    /**position: absolute;**/
     width: 80px;
     height: 100%;
     align-items: center;
     justify-content: center;
-    right: 0;
-    top: 0;
+    /**right: 0;**/
+    /**top: 0;**/
     background-color: #99e2d0;
     color: white;
     font-size: 24px;
