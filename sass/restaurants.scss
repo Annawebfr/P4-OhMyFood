@@ -60,13 +60,15 @@ header {
     border-top-left-radius: 40px;
     z-index: 1;
 }
+
 h1 {
     font-family: Shrikhand;
     font-weight: 400;
     font-size: 28px;
     /**font-style: italic;**/
     line-height: 41px;
-    margin-right: 10px;
+    /** margin-right: 10px;**/
+    left: 17px;
 }
 
 /**heart**/
@@ -78,7 +80,7 @@ h1 {
     top: 20px;
     right: 35px;
     right: 10%;
-   
+
     .full {
         display: none; // Cache le cœur plein par défaut
         color: #ff79da; // Couleur du cœur plein
@@ -106,13 +108,14 @@ h1 {
 }
 
 card_container {
-/**width: Hug (375px)px;
+    /**width: Hug (375px)px;
 height: Hug (1,275px)px;**/
-top: 315px;
-gap: 40px;
-opacity: 0px;
+    top: 315px;
+    gap: 40px;
+    opacity: 0px;
 
 }
+
 .card_menuentrees {
     animation: fadein 3s ease-in;
     animation-duration: 2s;
@@ -143,7 +146,7 @@ opacity: 0px;
     }
 }
 
-.card_menudesserts  {
+.card_menudesserts {
     animation: fadein 3s ease-in;
     animation-duration: 8s;
 }
@@ -158,80 +161,6 @@ opacity: 0px;
     }
 }
 
-
-.slide_check {
-    display: flex;
-  /**  position: absolute;
-    right: 0;
-    top: 0;**/
-    overflow: hidden;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-.card .check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #99e2d0;
-    color: white;
-    font-size: 24px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    width: 80px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-out;
-    /* Animation douce pour le glissement */
-    z-index: 2;
-}
-.card:hover .check {
-    transform: translateX(0);
-    /* Fait glisser la coche dans l'écran au survol */
-}
-.check i {
-    font-size: 16px;
-    /* Ajustez la taille de l'icône de la coche */
-}
-
-.prix p {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 31px;
-    margin-right: 12px;
-   /* transition: margin-left 0.4s ease-out;
-     Transition douce pour le déplacement du prix */  
-}
-
-/** je peux le supprimer car il est en double avec prix p je crois**/
-/**.card p {
-    margin: 0px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    text-align: left;
-    color: #000000
-    line-height: 17.63px;
-}**/
-
-h3 {
-    font-size: 16px;
-    font-weight: 300;
-    padding-bottom: 4px;
-}
-
 .content_title {
     margin-top: 25px;
     border-bottom: solid;
@@ -241,6 +170,12 @@ h3 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 18.75px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 4px;
 }
 
 .card {
@@ -258,8 +193,6 @@ h3 {
     transition: transform 0.4s ease-out;
     /* Transition douce pour le glissement */
 }
-
-
 
 .name {
     /**padding: 13px;**/
@@ -288,12 +221,74 @@ h3 {
 
 }
 
+.card p {
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #000000;
+    line-height: 17.63px;
+}
 
+.slide_check {
+    display: flex;
+    /**  position: absolute;
+    right: 0;
+    top: 0;**/
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
+.prix p {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 17px;
+    color: #000000;
+    margin-top: 31px;
+    margin-right: 12px;
+    /* transition: margin-left 0.4s ease-out;
+     Transition douce pour le déplacement du prix */
+}
 
+.card .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #99e2d0;
+    color: white;
+    font-size: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+    /* Animation douce pour le glissement */
+    z-index: 2;
+}
 
+.card:hover .check {
+    transform: translateX(0);
+    /* Fait glisser la coche dans l'écran au survol */
+}
 
-
+.check i {
+    font-size: 16px;
+    /* Ajustez la taille de l'icône de la coche */
+}
 
 /**footer**/
 footer {
