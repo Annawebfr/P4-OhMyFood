@@ -97,6 +97,14 @@ h1 {
   display: inline;
 }
 
+card_container {
+  /**width: Hug (375px)px;
+  height: Hug (1,275px)px;**/
+  top: 315px;
+  gap: 40px;
+  opacity: 0px;
+}
+
 .card_menuentrees {
   animation: fadein 3s ease-in;
   animation-duration: 2s;
@@ -187,10 +195,10 @@ h1 {
   text-overflow: ellipsis;
   line-height: 17px;
   color: #000000;
-  /* transition: margin-left 0.4s ease-out;
-    Transition douce pour le déplacement du prix */
   margin-top: 31px;
   margin-right: 12px;
+  /* transition: margin-left 0.4s ease-out;
+    Transition douce pour le déplacement du prix */
 }
 
 /** je peux le supprimer car il est en double avec prix p je crois**/
