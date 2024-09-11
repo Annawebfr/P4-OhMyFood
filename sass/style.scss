@@ -161,22 +161,8 @@ h1 {
     line-height: 28.13px;
     align-items: center;
     top: 152px;
-    left:42px;
+    left: 42px;
 }
-
-/**.sub_titre_decouvrez {
-    width: 315px;
-    height: 46px;
-    margin-top: 17px;
-    font-family: "roboto", sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 21px;
-    text-align: center;
-    color: #353535;
-    font-size: 18px;
-    align-items: center;
-}**/
 
 .reservation .btn {
     margin-top: 27px;
@@ -477,7 +463,7 @@ footer {
 
 .footer_logo {
     width: 109px;
-   /** height: 27px;**/
+    /** height: 27px;**/
     filter: invert(1);
     color: #FFFFFF;
     /**  padding: 20px 0;**/
@@ -546,9 +532,11 @@ a {
         gap: 0px;
         opacity: 0px;
     }
+
     .card_content {
-       padding: 0px;
+        padding: 0px;
     }
+
     .card_titles {
         left: 18px;
     }
