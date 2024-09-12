@@ -507,13 +507,44 @@ a {
         left: 45%;  
     }
 
-    .fonction {
+   .fonction {
         display: flex;
         flex-direction: row;
-    }
-    .fonction_titre {
+      }
+      
+      .fonction_titre {
+        order: 1;
+      }
+      
+      .fonction_btn {
+        order: 2;
+      }
+      
+      
+      /**.fonction {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      
+      .fonction_container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      
+      .fonction_titre {
         order: -1;
       }
+      
+      .fonction_btn {
+        display: flex;
+        flex-direction: row; 
+        /**display: inline-block;**/
+       /** margin-right: 10px;**/
+     /** }**/
+
+   
       
     .restaurant {
         display: flex;
@@ -538,7 +569,6 @@ a {
     .card_titles {
         left: 18px;
     }
-
 
     footer {
         display: flex;
