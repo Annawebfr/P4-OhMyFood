@@ -244,6 +244,7 @@ h3 {
   transition: margin-left 0.4s ease-out;
   /* Transition douce pour le déplacement du prix */
   transform: translateX(0); /* Commence à la position normale */
+  margin: 20px;
 }
 
 .card .check {
