@@ -28,7 +28,7 @@ body {
   justify-content: center;
   align-items: center;
   animation: animation_opacity 2s forwards;
-  animation-duration: 5s;
+  animation-duration: 3s;
   /** demander mon mentor si j'ai besion de cela**/
   animation-name: animation_opacity;
   animation-fill-mode: forwards;
