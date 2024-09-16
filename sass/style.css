@@ -175,6 +175,17 @@ a {
 }
 
 /*fonctionement*/
+.fonction_titre {
+  width: 275px;
+  height: 31px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
 .fonction {
   display: flex;
   flex-direction: column;
@@ -222,16 +233,6 @@ a {
 .fonction_icon {
   color: #7e7e7e;
   margin: 20px;
-}
-.fonction_titre {
-  width: 275px;
-  height: 31px;
-  margin-bottom: 20px;
-  margin-top: 25px;
-  font-family: Roboto, sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  left: 20px;
 }
 .fonction_texte {
   margin: 10px;
@@ -461,43 +462,31 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .loading_container {
     top: 50%;
     left: 45%;
   }
+  .titre_reserver {
+    width: 100%;
+    font-size: 40px;
+  }
+  .reservation p {
+    width: 100%;
+  }
   .fonction {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .fonction_titre {
-    order: 1;
+    margin-left: 220px;
   }
   .fonction_btn {
-    order: 2;
-  }
-  /**.fonction {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .fonction_container {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
   }
-
-  .fonction_titre {
-    order: -1;
-  }
-
-  .fonction_btn {
-    display: flex;
-    flex-direction: row; 
-    /**display: inline-block;**/
-  /** margin-right: 10px;**/
-  /** }**/
   .restaurant {
     /**display: flex;
     flex-direction: row;**/

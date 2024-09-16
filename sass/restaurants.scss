@@ -19,7 +19,7 @@ header {
         justify-content: center;
 
         .img {
-           width: 162px;
+            width: 162px;
             max-height: 100%;
             padding: 20px 0px 12px 0px;
         }
@@ -164,6 +164,7 @@ card_container {
         opacity: 1;
     }
 }
+
 h3 {
     font-size: 16px;
     font-weight: 300;
@@ -213,6 +214,7 @@ h3 {
 
 .card h4 {
     /**display: block;**/
+    width: 287px;
     margin-bottom: 7px;
     margin-top: -10px;
     white-space: nowrap;
@@ -227,8 +229,8 @@ h3 {
 
 }
 
-/**subtitle**/
-.card p {
+/**subtitle avant appelé .card p**/
+.name p {
     margin: 0px;
     white-space: nowrap;
     overflow: hidden;
@@ -363,10 +365,11 @@ a {
 
 
 @media (min-width: 768px) {
-.menu {
-    width:1055px;
-    margin-top: -40px;
-}
+    .menu {
+        width: 1055px;
+        margin-top: -40px;
+    }
+
     footer {
         display: flex;
         flex-direction: row-reverse;

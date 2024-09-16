@@ -196,6 +196,7 @@ h3 {
 
 .card h4 {
   /**display: block;**/
+  width: 287px;
   margin-bottom: 7px;
   margin-top: -10px;
   white-space: nowrap;
@@ -209,8 +210,8 @@ h3 {
   text-align: left;
 }
 
-/**subtitle**/
-.card p {
+/**subtitle avant appelé .card p**/
+.name p {
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
