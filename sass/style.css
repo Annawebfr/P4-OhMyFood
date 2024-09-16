@@ -7,7 +7,10 @@ body {
     background-color: $primary-color;
   }
 
-**/
+  .button {
+    background-color: $secondary-color;
+    border-color: $tertiaire-color;
+  }**/
 * {
   margin: 0;
   padding: 0;
@@ -249,11 +252,12 @@ a {
   top: 942px;
 }
 
-.titre_restaurants {
+.titre_restaurants h2 {
   width: 275px;
   /**height: 68px;**/
   margin-top: 50px;
-  left: 20px;
+  /**left: 20px;**/
+  margin: 20px;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -484,14 +488,14 @@ a {
     flex-direction: row;
     justify-content: center;
   }
+  .titre_restaurants h2 {
+    margin-bottom: 50px;
+    padding-left: 20px;
+  }
   .restaurant {
-    /**display: flex;
-    flex-direction: row;**/
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .restaurant_cards {
@@ -501,7 +505,7 @@ a {
   .restaurant_cards img {
     width: 490px;
     gap: 0px;
-    opacity: 0px;
+    /** opacity: 0px;**/
   }
   .card_content {
     padding: 0px;
