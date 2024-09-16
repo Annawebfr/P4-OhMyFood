@@ -38,7 +38,7 @@ header .fa-arrow-left {
 /**main**/
 .head_img {
   width: 100%;
-  height: 275px;
+  height: 383px;
   top: 63px;
   gap: 0px;
   opacity: 0px;
@@ -148,6 +148,12 @@ card_container {
     opacity: 1;
   }
 }
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 4px;
+}
+
 .content_title {
   margin-top: 25px;
   border-bottom: solid;
@@ -157,12 +163,6 @@ card_container {
   font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 18.75px;
-}
-
-h3 {
-  font-size: 16px;
-  font-weight: 300;
-  padding-bottom: 4px;
 }
 
 .card {
@@ -178,7 +178,7 @@ h3 {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   /** white-space: nowrap;
-   text-overflow: ellipsis;**/
+  text-overflow: ellipsis;**/
   transition: transform 0.4s ease-out;
   /* Transition douce pour le glissement */
 }
@@ -229,17 +229,20 @@ h3 {
   font-size: 15px;
   font-weight: 700;
   text-align: center;
-  white-space: nowrap; /* Empêche le texte de s'étendre sur plusieurs lignes */
-  overflow: hidden; /* Cache le texte qui dépasse */
-  text-overflow: ellipsis; /* Ajoute des points de suspension (...) */
+  white-space: nowrap;
+  /* Empêche le texte de s'étendre sur plusieurs lignes */
+  overflow: hidden;
+  /* Cache le texte qui dépasse */
+  text-overflow: ellipsis;
+  /* Ajoute des points de suspension (...) */
   line-height: 17px;
   color: #000000;
   margin-top: 31px;
   padding: 5px;
   transition: margin-left 0.4s ease-out;
   /* Transition douce pour le déplacement du prix */
-  transform: translateX(0); /* Commence à la position normale */
-  /**margin: 20px;**/
+  transform: translateX(0);
+  /* Commence à la position normale */
 }
 
 .card .check {
@@ -250,14 +253,13 @@ h3 {
   height: 100%;
   align-items: center;
   justify-content: center;
-  /** right: 0;
-   top: 0;**/
   background-color: #99e2d0;
   color: white;
   font-size: 24px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  transform: translateX(100%); /* Positionne la check box hors de l'écran à droite */
+  transform: translateX(100%);
+  /* Positionne la check box hors de l'écran à droite */
   transition: transform 0.4s ease-out;
   /* Animation douce pour le glissement */
   z-index: 2;
@@ -274,7 +276,8 @@ h3 {
 }
 
 .card:hover .prix p {
-  transform: translateX(-80px); /* Déplace le prix vers la gauche de la largeur de la check box */
+  transform: translateX(-80px);
+  /* Déplace le prix vers la gauche de la largeur de la check box */
 }
 
 /**footer**/
@@ -333,6 +336,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .menu {
+    width: 1055px;
+    margin-top: -40px;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
