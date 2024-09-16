@@ -195,7 +195,6 @@ h3 {
 }
 
 .card h4 {
-  /**display: block;**/
   width: 287px;
   margin-bottom: 7px;
   margin-top: -10px;
@@ -344,10 +343,10 @@ a {
   .card_menuentrees {
     width: 634px;
   }
-  card_menuplat {
+  .card_menuplat {
     width: 634px;
   }
-  card_menudesserts {
+  .card_menudesserts {
     width: 634px;
   }
   footer {
