@@ -266,7 +266,7 @@ a {
     display: flex;
     flex-flow: column;
     width: 100%;
-    gap: 26px;
+   /** gap: 26px;**/
     margin-top: 50px;
     padding-bottom: 66px;
     background-color: #F6F6F6;
@@ -278,10 +278,10 @@ a {
 
 .titre_restaurants h2 {
     width: 275px;
-    /**height: 68px;**/
-    margin-top: 50px;
-    /**left: 20px;**/
-    margin: 20px;
+   /** height: 68px;**/
+   /** margin-top: 50px;**/
+   margin-top: 40px;
+    margin-left: 2px;
     font-family: Roboto, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -299,7 +299,7 @@ a {
     overflow: hidden;
     position: relative;
     margin: 20px 0;
-    margin-top: 2px;
+    /**margin-top: 2px;**/
 }
 
 .restaurant_cards img {
@@ -313,8 +313,6 @@ a {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
-
 
 .card_content {
     position: relative;
@@ -508,11 +506,10 @@ a {
         top: 50%;
         left: 45%;
     }
-   
+
     .titre_reserver {
         width: 100%;
         font-size: 40px;
-
     }
 
     .reservation p {
@@ -540,22 +537,24 @@ a {
         margin-bottom: 50px;
         padding-left: 20px;
     }
+
     .restaurant {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .restaurant_cards {
         width: 490px;
         height: 250px;
+        margin: 20px;
     }
 
     .restaurant_cards img {
         width: 490px;
         gap: 0px;
-       /** opacity: 0px;**/
+        /** opacity: 0px;**/
     }
 
     .card_content {

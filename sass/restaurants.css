@@ -44,13 +44,9 @@ header .fa-arrow-left {
   opacity: 0px;
   -o-object-fit: cover;
   object-fit: cover;
-  /** margin-top: 20px;**/
 }
 
 /**section menu**/
-/**main {
-    height:1080px;
-}**/
 .menu {
   position: relative;
   margin-top: -70px;
@@ -101,7 +97,7 @@ h1 {
   display: inline;
 }
 
-card_container {
+.card_container {
   /**width: Hug (375px)px;
   height: Hug (1,275px)px;**/
   top: 315px;
@@ -337,8 +333,18 @@ a {
 
 @media (min-width: 768px) {
   .menu {
+    display: flex;
     width: 1055px;
     margin-top: -40px;
+  }
+  h1 {
+    width: 307px;
+    height: 41px;
+    margin-left: 30px;
+  }
+  .card_container {
+    margin-top: 30px;
+    justify-content: center;
   }
   .card_menuentrees {
     width: 634px;

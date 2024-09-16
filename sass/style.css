@@ -243,7 +243,7 @@ a {
   display: flex;
   flex-flow: column;
   width: 100%;
-  gap: 26px;
+  /** gap: 26px;**/
   margin-top: 50px;
   padding-bottom: 66px;
   background-color: #F6F6F6;
@@ -254,10 +254,10 @@ a {
 
 .titre_restaurants h2 {
   width: 275px;
-  /**height: 68px;**/
-  margin-top: 50px;
-  /**left: 20px;**/
-  margin: 20px;
+  /** height: 68px;**/
+  /** margin-top: 50px;**/
+  margin-top: 40px;
+  margin-left: 2px;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -274,7 +274,7 @@ a {
   overflow: hidden;
   position: relative;
   margin: 20px 0;
-  margin-top: 2px;
+  /**margin-top: 2px;**/
 }
 
 .restaurant_cards img {
@@ -501,6 +501,7 @@ a {
   .restaurant_cards {
     width: 490px;
     height: 250px;
+    margin: 20px;
   }
   .restaurant_cards img {
     width: 490px;
