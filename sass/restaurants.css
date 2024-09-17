@@ -333,7 +333,7 @@ a {
 
 @media (min-width: 768px) {
   .menu {
-    display: flex;
+    /** display: flex;**/
     width: 1055px;
     margin-top: -40px;
   }
