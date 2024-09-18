@@ -361,7 +361,7 @@ a {
 
 @media (min-width: 768px) {
     .menu {
-       /** display: flex;**/
+       display: flex;
         width: 1055px;
         margin-top: -40px;
     }
@@ -393,4 +393,16 @@ a {
         list-style: none;
         gap: 85px;
     }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        color: #FFFFFF;
+        list-style: none;
+        gap: 85px;
 }
