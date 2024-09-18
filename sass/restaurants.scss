@@ -213,7 +213,7 @@ h3 {
     margin-top: -10px;
     white-space: nowrap;
     text-overflow: ellipsis;
-   /** overflow: hidden;**/
+    /** overflow: hidden;**/
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #000000;
@@ -240,7 +240,7 @@ h3 {
 .prix p {
     display: flex;
     font-family: Roboto, sans-serif;
-   /** font-weight: bold;**/
+    /** font-weight: bold;**/
     font-size: 15px;
     font-weight: 700;
     text-align: center;
@@ -279,13 +279,13 @@ h3 {
     transition: transform 0.4s ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
-    
+
 }
 
 .card:hover .check {
     transform: translateX(0);
     /* La coche glisse à gauche dans l'écran */
-    
+
 }
 
 .check i {
@@ -361,28 +361,29 @@ a {
 
 @media (min-width: 768px) {
     .menu {
-      /** display: flex;
+        display: flex;
         width: 1055px;
-        margin-top: -40px;**/
-        max-width: 1055px;
-        margin: -50px auto 0 auto;
-        padding: 50px 150px;
-        box-sizing: border-box;
+        margin-top: -40px;
+        justify-content: center;
     }
+
     h1 {
         width: 307px;
         height: 41px;
-        margin-left: 30px;
+        /**margin-left: 30px;**/
     }
+
     .card {
         display: flex;
-       width:634px;
+        width: 634px;
     }
+
     .card_container {
-        margin-top: 30px;;
-       justify-content: center;
+        margin-top: 30px;
+        ;
+        justify-content: center;
     }
-   
+
 
     footer {
         display: flex;
@@ -397,6 +398,7 @@ a {
         list-style: none;
         gap: 85px;
     }
+
     footer {
         display: flex;
         flex-direction: row-reverse;
@@ -409,4 +411,4 @@ a {
         color: #FFFFFF;
         list-style: none;
         gap: 85px;
-}
+    }
