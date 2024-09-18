@@ -523,20 +523,20 @@ a {
     }
 
     .fonction_titre {
-        margin-left: 220px;
+        margin-left: 210px;
     }
 
     .fonction_btn {
+        width: 350px;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-
-    .titre_restaurants h2 {
+    /**.titre_restaurants h2 {
         margin-bottom: 50px;
         padding-left: 20px;
-    }
+    }**/
 
     .restaurant {
         display: flex;
@@ -561,8 +561,8 @@ a {
         padding: 0px;
     }
 
-    .card_titles {
-        left: 18px;
+   / .card_titles {
+       margin-right: 5px;
     }
 
     footer {

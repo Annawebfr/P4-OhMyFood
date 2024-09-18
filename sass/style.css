@@ -481,9 +481,10 @@ a {
     justify-content: center;
   }
   .fonction_titre {
-    margin-left: 220px;
+    margin-left: 210px;
   }
   .fonction_btn {
+    width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -511,9 +512,9 @@ a {
   .card_content {
     padding: 0px;
   }
-  .card_titles {
-    left: 18px;
-  }
+  /** .card_titles {
+       left: 18px;
+   }**/
   footer {
     display: flex;
     flex-direction: row-reverse;
