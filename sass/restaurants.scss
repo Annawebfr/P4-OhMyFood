@@ -361,9 +361,13 @@ a {
 
 @media (min-width: 768px) {
     .menu {
-       display: flex;
+      /** display: flex;
         width: 1055px;
-        margin-top: -40px;
+        margin-top: -40px;**/
+        max-width: 1055px;
+        margin: -50px auto 0 auto;
+        padding: 50px 150px;
+        box-sizing: border-box;
     }
     h1 {
         width: 307px;
