@@ -213,14 +213,13 @@ h3 {
     margin-top: -10px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+   /** overflow: hidden;**/
     font-family: Roboto, sans-serif;
     font-weight: bold;
     color: #000000;
     font-size: 18px;
     line-height: 21px;
     text-align: left;
-
 }
 
 /**subtitle avant appelé .card p**/
@@ -241,7 +240,7 @@ h3 {
 .prix p {
     display: flex;
     font-family: Roboto, sans-serif;
-    font-weight: bold;
+   /** font-weight: bold;**/
     font-size: 15px;
     font-weight: 700;
     text-align: center;
@@ -280,6 +279,7 @@ h3 {
     transition: transform 0.4s ease-out;
     /* Animation douce pour le glissement */
     z-index: 2;
+    
 }
 
 .card:hover .check {

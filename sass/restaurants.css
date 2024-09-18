@@ -196,7 +196,7 @@ h3 {
   margin-top: -10px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
+  /** overflow: hidden;**/
   font-family: Roboto, sans-serif;
   font-weight: bold;
   color: #000000;
@@ -221,7 +221,7 @@ h3 {
 .prix p {
   display: flex;
   font-family: Roboto, sans-serif;
-  font-weight: bold;
+  /** font-weight: bold;**/
   font-size: 15px;
   font-weight: 700;
   text-align: center;
