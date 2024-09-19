@@ -361,8 +361,9 @@ a {
     .menu {
         display: flex;
         width: 1055px;
-        margin-top: -40px;
+        margin-top: -90px;
         justify-content: center;
+       /** margin: 170px;**/
     }
 
     h1 {
@@ -374,7 +375,7 @@ a {
         position: absolute;
         top: 20px;
         right: 50%;
-
+    }
     .card {
         display: flex;
         width: 634px;

@@ -73,7 +73,6 @@ h1 {
   height: 21px;
   font-size: 22px;
   top: 20px;
-  right: 35px;
   right: 10%;
 }
 .heart .full {
@@ -334,13 +333,19 @@ a {
   .menu {
     display: flex;
     width: 1055px;
-    margin-top: -40px;
+    margin-top: -90px;
     justify-content: center;
+    /** margin: 170px;**/
   }
   h1 {
     width: 307px;
     height: 41px;
-    /**margin-left: 30px;**/
+    text-align: center;
+  }
+  .heart {
+    position: absolute;
+    top: 20px;
+    right: 50%;
   }
   .card {
     display: flex;
