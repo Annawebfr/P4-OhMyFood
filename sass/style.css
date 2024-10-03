@@ -489,10 +489,10 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  .titre_restaurants h2 {
-    margin-bottom: 50px;
-    padding-left: 20px;
-  }
+  /**.titre_restaurants h2 {
+      margin-bottom: 50px;
+      padding-left: 20px;
+  }**/
   .restaurant {
     display: flex;
     flex-direction: row;
@@ -512,9 +512,9 @@ a {
   .card_content {
     padding: 0px;
   }
-  /** .card_titles {
-       left: 18px;
-   }**/
+  .card_titles {
+    margin-right: 5px;
+  }
   footer {
     display: flex;
     flex-direction: row-reverse;
