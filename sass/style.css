@@ -489,10 +489,9 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  /**.titre_restaurants h2 {
-      margin-bottom: 50px;
-      padding-left: 20px;
-  }**/
+  .titre_restaurants h2 {
+    margin-bottom: 30px;
+  }
   .restaurant {
     display: flex;
     flex-direction: row;
