@@ -338,14 +338,13 @@ a {
     margin-left: 190px;
   }
   h1 {
-    width: 307px;
     height: 41px;
     text-align: center;
   }
   .heart {
     position: absolute;
     top: 50px;
-    /** right: 50%;**/
+    right: 35%;
   }
   .card {
     display: flex;
