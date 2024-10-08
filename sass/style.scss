@@ -505,6 +505,8 @@ a {
     .loading_container {
         top: 50%;
         left: 45%;
+        align-items: center; /* Modification : centrer les éléments verticalement */
+        gap: 20px; /* Modification : ajouter un espacement entre le titre et les cartes */
     }
 
     .titre_reserver {
@@ -522,27 +524,30 @@ a {
         justify-content: center;
     }
 
-    .fonction_titre {
+   /** .fonction_titre {
         margin-left: 210px;
-    }
+    }**/
 
     .fonction_btn {
         width: 350px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        gap: 10px;
     }
 
-    .titre_restaurants h2 {
+   /** .titre_restaurants h2 {
     margin-bottom: 30px;
-   
+    }**/
+    .titre_restaurants {
+        text-align: center; /* Modification : centrer le texte */
     }
-
     .restaurant {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
     }
 
     .restaurant_cards {
