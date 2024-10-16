@@ -1,17 +1,4 @@
 @charset "UTF-8";
-/**generale**/
-/**$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiaire-color: #99E2D0;**/
-/**exemple
-body {
-    background-color: $primary-color;
-  }
-
-  .button {
-    background-color: $secondary-color;
-    border-color: $tertiaire-color;
-  }**/
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +35,6 @@ body {
   position: absolute;
   top: 35%;
   left: 35%;
-  /**  animation: animation_loader 2s linear;**/
   animation: animation_loader 2s linear infinite;
 }
 
@@ -84,7 +70,6 @@ header {
 }
 
 .logo {
-  /**position: relative;**/
   display: flex;
   position: relative;
   flex-direction: column;
@@ -194,9 +179,6 @@ a {
   gap: 0px;
   opacity: 0px;
   top: 400px;
-  /**margin-left: 25px;**/
-  /**  width: 375px;**/
-  /** height: 440px;**/
 }
 .fonction_btn {
   display: flex;
@@ -241,30 +223,22 @@ a {
 
 /** restaurant **/
 .restaurant {
-  display: flex;
-  flex-flow: column;
   width: 100%;
-  /** gap: 26px;**/
   margin-top: 50px;
   padding-bottom: 66px;
   background-color: #F6F6F6;
   padding-left: 20px;
   padding-right: 20px;
-  top: 942px;
 }
 
 .titre_restaurants h2 {
   width: 275px;
-  /** height: 68px;**/
-  /** margin-top: 50px;**/
   margin-top: 40px;
   margin-left: 2px;
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28.13px;
-  /**text-align: left;**/
-  /** margin-left: 15px;**/
 }
 
 .restaurant_cards {
@@ -272,10 +246,9 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  overflow: hidden;
+  /** overflow: hidden;**/
   position: relative;
   margin: 20px 0;
-  /**margin-top: 2px;**/
 }
 
 .restaurant_cards img {
@@ -295,7 +268,6 @@ a {
   position: relative;
   padding: 16px;
   color: #000000;
-  /** display: flex;**/
 }
 
 .card_titles {
@@ -306,9 +278,6 @@ a {
 }
 
 .subtitle_resto {
-  /** margin: 10px;**/
-  /** line-height: 19.92px;**/
-  /**text-align: left;**/
   font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-weight: 300;
@@ -353,7 +322,6 @@ restaurant .card_titles .empty {
   align-items: center;
   height: 29px;
   width: 80px;
-  /**border-radius: 2px;**/
   padding: 5px 15px;
   color: #008766;
   background-color: #99e2d0;
@@ -364,7 +332,6 @@ restaurant .card_titles .empty {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
-  /**text-align: center;**/
 }
 
 .restaurant .card .container_new {
@@ -391,22 +358,29 @@ restaurant .card_titles .empty {
 }
 .heart .full {
   display: none;
+  /*Cache le cœur plein par défaut*/
   color: #ff79da;
+  /*Couleur du cœur plein*/
   transition: color 0.3s;
+  /*Animation douce pour le changement de couleur*/
   width: 22px;
   height: 21px;
 }
 .heart .empty {
   color: black;
+  /*Couleur du cœur vide*/
   transition: color 0.3s;
+  /*Animation douce pour le changement de couleur*/
   width: 22px;
   height: 21px;
 }
 .heart:hover .empty {
   display: none;
+  /*Cache le cœur vide au survol*/
 }
 .heart:hover .full {
   display: inline;
+  /*Affiche le cœur plein au survol*/
 }
 
 /**footer**/
@@ -443,7 +417,6 @@ footer {
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
-  /**text-align: left;**/
 }
 
 .footer_links_simple {
@@ -464,12 +437,12 @@ a {
   text-decoration: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .loading_container {
     top: 50%;
     left: 45%;
-    align-items: center; /* Modification : centrer les éléments verticalement */
-    gap: 20px; /* Modification : ajouter un espacement entre le titre et les cartes */
+    align-items: center;
+    gap: 20px;
   }
   .titre_reserver {
     width: 100%;
@@ -483,9 +456,9 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  /** .fonction_titre {
-       margin-left: 210px;
-   }**/
+  .fonction_titre {
+    margin-left: 200px;
+  }
   .fonction_btn {
     width: 350px;
     display: flex;
@@ -493,15 +466,8 @@ a {
     justify-content: center;
     gap: 10px;
   }
-  /** .titre_restaurants h2 {
-   margin-bottom: 30px;
-   }**/
-  .titre_restaurants {
-    text-align: center; /* Modification : centrer le texte */
-  }
   .restaurant {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -513,7 +479,6 @@ a {
   }
   .restaurant_cards img {
     width: 490px;
-    gap: 0px;
     /** opacity: 0px;**/
   }
   .card_content {
