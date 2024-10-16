@@ -262,7 +262,7 @@ a {
 
 
 /** restaurant **/
-.restaurant_cards_container {
+.restaurant_container {
     display: flex;
     flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si l'espace est insuffisant */
     justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
@@ -540,7 +540,7 @@ a {
         text-align: center; /* Modification : centrer le texte */
     }
 
-    .restaurant_cards_container {
+    .restaurant_container {
         display: flex;
         flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si l'espace est insuffisant */
         justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
