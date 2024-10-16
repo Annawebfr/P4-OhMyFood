@@ -536,9 +536,9 @@ a {
    /** .titre_restaurants h2 {
     margin-bottom: 30px;
     }**/
-    .titre_restaurants {
-        text-align: center; /* Modification : centrer le texte */
-    }
+   /** .titre_restaurants {
+        text-align: center; 
+   /** }**/
 
     .restaurant_container {
         display: flex;
@@ -546,9 +546,15 @@ a {
         justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
         gap: 20px; /* Espace entre les cartes */
     }
+    .division1,
+    division2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .restaurant {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
