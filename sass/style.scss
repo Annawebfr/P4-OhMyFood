@@ -1,16 +1,3 @@
-/**$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiaire-color: #99E2D0;**/
-
-/**exemple
-body {
-    background-color: $primary-color;
-  }
-  
-  .button {
-    background-color: $secondary-color;
-    border-color: $tertiaire-color;
-  }**/
 
 
 * {
@@ -50,7 +37,6 @@ body {
     position: absolute;
     top: 35%;
     left: 35%;
-    /**  animation: animation_loader 2s linear;**/
     animation: animation_loader 2s linear infinite;
 }
 
@@ -92,7 +78,6 @@ header {
 }
 
 .logo {
-    /**position: relative;**/
     display: flex;
     position: relative;
     flex-direction: column;
@@ -205,11 +190,6 @@ a {
     gap: 0px;
     opacity: 0px;
     top: 400px;
-    /**margin-left: 25px;**/
-    /**  width: 375px;**/
-    /** height: 440px;**/
-
-
 
     &_btn {
         display: flex;
@@ -260,29 +240,19 @@ a {
 
 
 /** restaurant **/
-.restaurant_container {
-    display: flex;
-    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si l'espace est insuffisant */
-    justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
-    gap: 20px; /* Espace entre les cartes */
-}
 .restaurant {
-   /** display: flex;
-    flex-flow: column;**/
     width: 100%;
-   /** gap: 26px;**/
     margin-top: 50px;
     padding-bottom: 66px;
     background-color: #F6F6F6;
     padding-left: 20px;
     padding-right: 20px;
-    top: 942px;
 }
 
 
 .titre_restaurants h2 {
     width: 275px;
-   margin-top: 40px;
+    margin-top: 40px;
     margin-left: 2px;
     font-family: Roboto, sans-serif;
     font-size: 24px;
@@ -296,7 +266,7 @@ a {
     background-color: #ffffff;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    overflow: hidden;
+   /** overflow: hidden;**/
     position: relative;
     margin: 20px 0;
 }
@@ -372,7 +342,6 @@ restaurant .card_titles .empty {
     align-items: center;
     height: 29px;
     width: 80px;
-    /**border-radius: 2px;**/
     padding: 5px 15px;
     color: #008766;
     background-color: #99e2d0;
@@ -383,8 +352,6 @@ restaurant .card_titles .empty {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.41px;
-    /**text-align: center;**/
-
 }
 
 .restaurant .card .container_new {
@@ -411,27 +378,34 @@ restaurant .card_titles .empty {
     right: 10%;
 
     .full {
-        display: none; // Cache le cœur plein par défaut
-        color: #ff79da; // Couleur du cœur plein
-        transition: color 0.3s; // Animation douce pour le changement de couleur
+        display: none;
+        /*Cache le cœur plein par défaut*/
+        color: #ff79da;
+        /*Couleur du cœur plein*/
+        transition: color 0.3s;
+        /*Animation douce pour le changement de couleur*/
         width: 22px;
         height: 21px;
     }
 
     .empty {
-        color: black; // Couleur du cœur vide
-        transition: color 0.3s; // Animation douce pour le changement de couleur
+        color: black;
+        /*Couleur du cœur vide*/
+        transition: color 0.3s;
+        /*Animation douce pour le changement de couleur*/
         width: 22px;
         height: 21px;
     }
 
     &:hover {
         .empty {
-            display: none; // Cache le cœur vide au survol
+            display: none;
+            /*Cache le cœur vide au survol*/
         }
 
         .full {
-            display: inline; // Affiche le cœur plein au survol
+            display: inline;
+            /*Affiche le cœur plein au survol*/
         }
     }
 }
@@ -471,7 +445,6 @@ footer {
     font-size: 16px;
     font-weight: 500;
     line-height: 18.75px;
-    /**text-align: left;**/
 }
 
 .footer_links_simple {
@@ -495,13 +468,13 @@ a {
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     .loading_container {
         top: 50%;
         left: 45%;
-        align-items: center; /* Modification : centrer les éléments verticalement */
-        gap: 20px; /* Modification : ajouter un espacement entre le titre et les cartes */
+        align-items: center;
+        gap: 20px;
     }
 
     .titre_reserver {
@@ -531,25 +504,8 @@ a {
         gap: 10px;
     }
 
-   /** .titre_restaurants h2 {
-    margin-bottom: 30px;
-    }**/
-   /** .titre_restaurants {
-        text-align: center; 
-   /** }**/
+ 
 
-    .restaurant_container {
-        display: flex;
-        flex-wrap: wrap; /* Permet aux cartes de passer à la ligne suivante si l'espace est insuffisant */
-        justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
-        gap: 20px; /* Espace entre les cartes */
-    }
-    /**.division1,
-    division2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }**/
     .restaurant {
         display: flex;
         flex-wrap: wrap;
@@ -565,7 +521,6 @@ a {
 
     .restaurant_cards img {
         width: 490px;
-        gap: 0px;
         /** opacity: 0px;**/
     }
 
@@ -574,7 +529,7 @@ a {
     }
 
     .card_titles {
-       margin-right: 5px;
+        margin-right: 5px;
     }
 
     footer {
