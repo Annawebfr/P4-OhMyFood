@@ -524,9 +524,9 @@ a {
         justify-content: center;
     }
 
-   /** .fonction_titre {
-        margin-left: 210px;
-    }**/
+    .fonction_titre {
+        margin-left: 200px;
+    }
 
     .fonction_btn {
         width: 350px;
@@ -551,6 +551,9 @@ a {
     }
 
     .restaurant_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         width: 490px;
         height: 250px;
         margin: 20px;
