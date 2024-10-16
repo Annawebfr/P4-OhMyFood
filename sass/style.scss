@@ -546,12 +546,12 @@ a {
         justify-content: space-between; /* Aligne les cartes avec un espace entre elles */
         gap: 20px; /* Espace entre les cartes */
     }
-    .division1,
+    /**.division1,
     division2{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    }**/
     .restaurant {
         display: flex;
         flex-wrap: wrap;
