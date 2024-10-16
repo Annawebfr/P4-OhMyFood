@@ -224,7 +224,7 @@ a {
 /** restaurant **/
 .restaurant {
   width: 100%;
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 66px;
   background-color: #F6F6F6;
   padding-left: 20px;
@@ -232,13 +232,11 @@ a {
 }
 
 .titre_restaurants {
-  width: 275px;
-  margin-top: 40px;
-  margin-left: 2px;
+  /** width: 275px;
+  margin-left: 2px;**/
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 28.13px;
 }
 
 .restaurant_cards {
@@ -246,7 +244,7 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  /** overflow: hidden;**/
+  overflow: hidden;
   position: relative;
   margin: 20px 0;
 }
@@ -457,7 +455,7 @@ a {
     justify-content: center;
   }
   .fonction_titre {
-    margin-left: 200px;
+    margin-left: 230px;
   }
   .fonction_btn {
     width: 350px;
@@ -467,8 +465,7 @@ a {
     gap: 10px;
   }
   .titre_restaurants {
-    text-align: left;
-    margin-bottom: 20px;
+    width: 70%;
   }
   .restaurant {
     display: flex;
@@ -486,6 +483,7 @@ a {
   }
   .card_content {
     padding: 0px;
+    padding-left: 15px;
   }
   .card_titles {
     margin-right: 5px;
