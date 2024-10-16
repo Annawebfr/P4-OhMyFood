@@ -250,7 +250,7 @@ a {
 }
 
 
-.titre_restaurants h2 {
+.titre_restaurants {
     width: 275px;
     margin-top: 40px;
     margin-left: 2px;
@@ -505,12 +505,14 @@ a {
     }
 
  
-
+   .titre_restaurants {
+        text-align: left; 
+        margin-bottom: 20px; 
+    }
     .restaurant {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
     }
 
     .restaurant_cards {
