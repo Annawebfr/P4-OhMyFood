@@ -454,9 +454,6 @@ a {
     flex-direction: row;
     justify-content: center;
   }
-  .fonction_titre {
-    padding-left: 220px;
-  }
   .fonction_btn {
     width: 350px;
     display: flex;
