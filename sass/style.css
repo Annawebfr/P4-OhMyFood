@@ -449,6 +449,9 @@ a {
   .reservation p {
     width: 100%;
   }
+  .fonction_titre {
+    margin-left: 15%;
+  }
   .fonction {
     display: flex;
     flex-direction: row;
