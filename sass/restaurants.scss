@@ -368,13 +368,15 @@ a {
 
     h1 {
         height: 41px;
-        text-align: center; 
+        text-align: center;
     }
+
     .heart {
         position: absolute;
         top: 50px;
-       right: 35%;
+        right: 35%;
     }
+
     .card {
         display: flex;
         width: 634px;
@@ -412,6 +414,6 @@ a {
         color: #FFFFFF;
         list-style: none;
         gap: 85px;
-   
-    } 
+
+    }
 }
